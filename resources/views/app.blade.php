@@ -1,62 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Laravel</title>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <title>@yield('title')</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {!! Html::meta( 'description', '' ) !!}
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+        {!! Html::meta( 'robots', 'all' ) !!}
 
-	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+        <link rel="canonical" href="http://www.defensamedicolegal.com/" />
 
-	<!-- Fonts -->
-	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Laravel</a>
-			</div>
+        {!! Html::style( 'css/main.css' ) !!}
+        {!! Html::script( 'js/vendor/modernizr.min.js' ) !!}
+        <script type="text/javascript">
 
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="{{ url('/') }}">Home</a></li>
-				</ul>
+        </script>
+    </head>
 
-				<ul class="nav navbar-nav navbar-right">
-					@if (Auth::guest())
-						<li><a href="{{ url('/auth/login') }}">Login</a></li>
-						<li><a href="{{ url('/auth/register') }}">Register</a></li>
-					@else
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
-							</ul>
-						</li>
-					@endif
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	@yield('content')
-
-	<!-- Scripts -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-</body>
-</html>
+    <body class="@yield('section-class')" begin>
+        <div class="wrapper clearfix">
+            <header class="central clearfix">
+                <h1>Asociación Internacional en Defesa de los Derechos del Médico<img src="" alt=""></h1>
+                <nav class="clearfix">
+                    <ul class="clearfix">
+                        <li><a href="" title="Inicio">Inicio</a></li>
+                        <li>
+                            ¿Quiénes Sómos?
+                            <ul class="clearfix">
+                                <li>AIDDEM</li>
+                                <li>¿Qué hace la AIDDEM?</li>
+                            </ul>
+                        </li>
+                        <li><a href="">Art. 272 LGS</a></li>
+                        <li><a href="">Art. 81 LGS</a></li>
+                        <li><a href="">Servicios</a></li>
+                        <li>
+                            Servicios
+                            <ul class="clearfix">
+                                <li>Corte Interamericana de Derechos Humanos</li>
+                                <li>respaldo Internacional</li>
+                            </ul>
+                        </li>
+                        <li><a href="">Afíliate</a></li>
+                    </ul>
+                </nav>
+            </header>
+            @yield('content')
+            <footer class="central clearfix">
+                <div class="clearfix contact">
+                    <p class="contact-title">Contáctanos</p>
+                    <ul>
+                        <li><a href="mailto:informes@aiddem.com" target="_blank" title="informes@aiddem.com">informes@aiddem.com</a></li>
+                        <li><a href="mailto:pagos@aiddem.com" title="pagos@aiddem.com" target="_blank">pagos@aiddem.com</a></li>
+                        <li><a href="mailto:documentos@aiddem.com" title="documentos@aiddem.com" target="_blank">documentos@aiddem.com</a></li>
+                        <li>Tel: +52 55 8421 5531</li>
+                    </ul>
+                </div>
+                <div class="clearfix privacy-policy">
+                    <p>&copy; 2014 Asociación Internacional en Defensa de los derechos del Médico</p>
+                    <p><a href="/aviso-de-privacidad" title="Aviso de Privacidad" target="_blank">Aviso de Privacidad</a></p>
+                </div>
+            </footer>
+            <a href="#begin" title="Subir">Subir</a>
+        </div>
+        {!! Html::script( 'js/main.min.js' ) !!}
+    </body>
+</script>
