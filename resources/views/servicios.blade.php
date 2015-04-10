@@ -21,7 +21,7 @@
                         <li>Aceptar el contrato</li>
                         <li>Depósitos a la cuenta número: 4041280041, clabe: 021180040412800414 de HSBC, a nombre de Arroyo Abogados S.C.</li>
                         <li>El despacho Arroyo Abogados S.C., al cual realizas el pago es el principal afiliado del Consejo Mexicano de la Defensa Médico Legal y fundamental promotor de la defensa jurídica de tus Derechos.</li>
-                        <li>Mandar ficha de pago a contactodefensamedicolegal@gmail.com</li>
+                        <li>Mandar ficha de pago a <a href="mailto:contactodefensamedicolegal@gmail.com" target="_blank" title="contactodefensamedicolegal@gmail.com">contactodefensamedicolegal@gmail.com</a></li>
                         <li>Nuestros abogados se pondrán en contacto con usted para pedirle entre otros documentos lo siguiente:
                             <ul class="bit-1">
                                 <li>Carta poder</li>
