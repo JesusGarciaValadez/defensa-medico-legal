@@ -30,7 +30,7 @@
                     <ul class="clearfix bit-1">
                         <li><a href="/" target="_self" title="Inicio">Inicio</a></li>
                         <li>
-                            ¿Quiénes Sómos?
+                            <a href="/quienes-somos" target="_self" title="¿Quiénes Sómos?">¿Quiénes Sómos?</a>
                             <ul class="clearfix">
                                 <li><a href="/aiddem" target="_self" title="AIDDEM">AIDDEM</a></li>
                                 <li><a href="/que-hace-la-aiddem" target="_self" title="¿Qué hace la AIDDEM?">¿Qué hace la AIDDEM?</a></li>
@@ -40,7 +40,7 @@
                         <li><a href="/art-81" target="_self" title="Art. 81 LGS">Art. 81 LGS</a></li>
                         <li><a href="/servicios" target="_self" title="Servicios">Servicios</a></li>
                         <li>
-                            Servicios
+                            <a href="/beneficios" target="_self" title="Beneficios">Beneficios</a>
                             <ul class="clearfix">
                                 <li><a href="/corte-interamericana-de-derechos-humanos" target="_self" title="Corte Interamericana de Derechos Humanos">Corte Interamericana de Derechos Humanos</a></li>
                                 <li><a href="/respaldo-internacional" target="_self" title="Respaldo Internacional">Respaldo Internacional</a></li>

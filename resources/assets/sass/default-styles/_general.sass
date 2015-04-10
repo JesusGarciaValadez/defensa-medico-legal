@@ -62,24 +62,20 @@ p, figcaption
                         margin: 0
                         padding: 0
                         position: relative
-                        &:nth-child( 2 ),&:nth-child( 6 ), a
-                            padding: 5px 10px
-                            &:hover
-                                color: $text-highlighted
-                        &:nth-child( 2 )
+                        &:nth-child( 2 ),&:nth-child( 6 )
                             ul
-                                bottom: -85px
-                        &:nth-child( 6 )
-                            ul
-                                bottom: -85px
+                                bottom: -95px
                         a
                             color: $text-gray
                             display: block
+                            padding: 5px 10px
                             text-align: center
                             text-decoration: none
                             width: 100%
+                            &:hover
+                                color: $text-highlighted
                         ul
-                            background-color: $white-color
+                            background-color: #262626
                             display: none
                             left: 0
                             padding: 0
@@ -87,13 +83,14 @@ p, figcaption
                             width: 280px
                             li
                                 border: 0 none transparent
-                                border-bottom: 1px solid $text-highlighted
+                                border-bottom: 1px solid $black-color
                                 list-style: none outside
                                 padding: 10px
                                 text-align: left
                                 &:last-child
                                     border: 0 none transparent
                                 a
+                                    color: $white-color
                                     font-size: 12px
                                     text-align: left
                         &:hover
