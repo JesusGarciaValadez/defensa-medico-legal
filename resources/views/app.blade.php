@@ -32,21 +32,21 @@
                         <li>
                             ¿Quiénes Sómos?
                             <ul class="clearfix">
-                                <li><a href="" target="_self" title="AIDDEM">AIDDEM</a></li>
-                                <li><a href="" target="_self" title="¿Qué hace la AIDDEM?">¿Qué hace la AIDDEM?</a></li>
+                                <li><a href="/aiddem" target="_self" title="AIDDEM">AIDDEM</a></li>
+                                <li><a href="/que-hace-la-aiddem" target="_self" title="¿Qué hace la AIDDEM?">¿Qué hace la AIDDEM?</a></li>
                             </ul>
                         </li>
                         <li><a href="/art-272" target="_self" title="Art. 272 LGS">Art. 272 LGS</a></li>
-                        <li><a href="" target="_self" title="Art. 81 LGS">Art. 81 LGS</a></li>
-                        <li><a href="" target="_self" title="Servicios">Servicios</a></li>
+                        <li><a href="/art-81" target="_self" title="Art. 81 LGS">Art. 81 LGS</a></li>
+                        <li><a href="/servicios" target="_self" title="Servicios">Servicios</a></li>
                         <li>
                             Servicios
                             <ul class="clearfix">
-                                <li><a href="" target="_self" title="Corte Interamericana de Derechos Humanos">Corte Interamericana de Derechos Humanos</a></li>
-                                <li><a href="" target="_self" title="Respaldo Internacional">Respaldo Internacional</a></li>
+                                <li><a href="/corte-interamericana-de-derechos-humanos" target="_self" title="Corte Interamericana de Derechos Humanos">Corte Interamericana de Derechos Humanos</a></li>
+                                <li><a href="/respaldo-internacional" target="_self" title="Respaldo Internacional">Respaldo Internacional</a></li>
                             </ul>
                         </li>
-                        <li><a href="" target="_self" title="Afíliate">Afíliate</a></li>
+                        <li><a href="/afiliate" target="_self" title="Afíliate">Afíliate</a></li>
                     </ul>
                 </nav>
             </header>

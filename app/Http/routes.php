@@ -20,6 +20,11 @@ Route::get('/art-272', function ()
     return view('art272');
 } );
 
+Route::get('/art-81', function ()
+{
+    return view('art81');
+} );
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
