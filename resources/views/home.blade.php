@@ -10,20 +10,7 @@
                 <section class="clearfix sign bit-90">
                     <p class="bit-90">Último día 16 de abril a las 15:00 hrs. para realizar tu amparo individual… <a href="/solicitud" title="¡Solicítalo ahora!" target="_blank">¡Solicítalo ahora!</a></p>
                 </section>
-                <section class="clearfix advance second bit-3">
-                    <p class="bit-1">
-                        {!! Html::image( 'img/home/suprema-corte-de-justicia-de-la-nacion.jpg', 'Escudo de la Suprema Corte de Justicia de la Nación', [ 'class' => 'bit-2' ] ) !!}
-                        <span class="bit-1">Las instancias más altas nos respaldan. La Ley es igual para todos y la justicia no tiene miramientos.</span>
-                    </p>
-                </section>
-                <section class="clearfix advance third bit-3">
-                    <p class="bit-1">
-                        <a href="/legislacion-internacional" target="_blank" title="Conoce los derechos y regulaciones que la comisión Interamericana ha desarrollado en pro de nosotros." class="clearfix bit-1">
-                            {!! Html::image( 'img/home/corte-interamericana-de-derechos-humanos.png', 'Escudo de la Corte Interamericana de Derechos Humanos', [ 'class' => 'bit-40' ] ) !!}
-                            <span class="bit-1">Conoce los derechos y regulaciones que la comisión Interamericana ha desarrollado en pro de nosotros.</span>
-                        </a>
-                    </p>
-                </section>
+                <h1 class="bit-60">Sitios de interés</h1>
                 <section class="clearfix advance first bit-3">
                     <p class="bit-1">
                         <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5386686&fecha=25/03/2015" target="_blank" title="¡Te quieren obligar a pagar año con año por ejercer tu profesión de por vida!" class="clearfix bit-1">
@@ -32,7 +19,21 @@
                         </a>
                     </p>
                 </section>
-                <aside class="cleafix bit-1">
+                <section class="clearfix advance second bit-3">
+                    <p class="bit-1">
+                        <a href="https://www.scjn.gob.mx/" target="_blank" title="Suprema Corte de Justicia de la Nación">
+                            {!! Html::image( 'img/home/suprema-corte-de-justicia-de-la-nacion.jpg', 'Escudo de la Suprema Corte de Justicia de la Nación', [ 'class' => 'bit-2' ] ) !!}
+                        </a>
+                    </p>
+                </section>
+                <section class="clearfix advance third bit-3">
+                    <p class="bit-1">
+                        <a href="/legislacion-internacional" target="_blank" title="Conoce los derechos y regulaciones que la comisión Interamericana ha desarrollado en pro de nosotros." class="clearfix bit-1">
+                            {!! Html::image( 'img/home/corte-interamericana-de-derechos-humanos.png', 'Escudo de la Corte Interamericana de Derechos Humanos', [ 'class' => 'bit-40' ] ) !!}
+                        </a>
+                    </p>
+                </section>
+                <aside class="cleafix bit-60">
                     {!! Html::image( 'img/home/abogados.jpg', 'Abogados', [ 'class' => 'bit-3' ] ) !!}
                     <p class="bit-666">El Consejo Mexicano de la Defensa Médico Legal cuenta con un importante grupo de Abogados altamente calificados para la defensa de los intereses y Derechos Humanos de los médicos.</p>
                 </aside>

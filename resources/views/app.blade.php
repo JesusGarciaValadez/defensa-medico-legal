@@ -42,13 +42,7 @@
                 <nav class="clearfix bit-70 desktop">
                     <ul class="clearfix bit-1">
                         <li><a href="/" target="_self" title="Inicio">Inicio</a></li>
-                        <li>
-                            <a href="/quienes-somos" target="_self" title="¿Quiénes Sómos?">¿Quiénes Sómos?</a>
-                            <ul class="clearfix">
-                                <li><a href="/aiddem" target="_self" title="AIDDEM">AIDDEM</a></li>
-                                <li><a href="/que-hace-la-aiddem" target="_self" title="¿Qué hace la AIDDEM?">¿Qué hace la AIDDEM?</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="/quienes-somos" target="_self" title="¿Quiénes Sómos?">¿Quiénes Somos?</a></li>
                         <li><a href="/art-272" target="_self" title="Art. 272 LGS">Art. 272 LGS</a></li>
                         <li><a href="/art-81" target="_self" title="Art. 81 LGS">Art. 81 LGS</a></li>
                         <li><a href="/servicios" target="_self" title="Servicios">Servicios</a></li>

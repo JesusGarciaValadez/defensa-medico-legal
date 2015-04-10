@@ -7,6 +7,8 @@
                 float: none
                 margin: 0 auto
                 padding: 0
+            h1
+                @include font-mask( normal, em( 22, 16 ), 1.5em, $lato-regular, $text-gray )
             .advance
                 img,p.bit-666,span.bit-666
                 img
@@ -62,7 +64,7 @@
                     @include font-mask( normal, em( 15, 16 ), 1.5em, $lato-regular, $text-gray )
                     align-content: center
                     height: 60px
-                    margin: 60px auto 0
+                    margin: 1em auto
                     text-align: center
             > p
                 clear: both
