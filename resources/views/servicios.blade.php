@@ -12,8 +12,8 @@
                     <p class="bit-1">Amparo en el cual se busca la declaración judicial de inconstitucionalidad de la norma general que se quiere aplicar en tu perjuicio, solicitando previamente la  suspensión con la cual se evitará que de inmediato se aplique la norma en tu perjuicio hasta en tanto se resuelva en definitiva el amparo.</p>
                     <p class="bit-1">Toma en cuenta que las resoluciones finales son dictadas por un Juez o un Tribunal.</p>
                     <p class="bit-1">Este amparo tiene un costo, pero te da la tranquilidad de que estás protegido todo este tiempo.</p>
-                    <p class="bit-1">El costo del amparo es de ,500.00, de los cuales tendrás que hacer un pago de  ,000.00 al momento de contratar y los restantes ,500.00 al final.</p>
-                    <p class="bit-1">Descuentos: Por el primer médico que invites y contrate el amparo se te hará un descuento del 50% con el  segundo pagarás solo ,000.00 y con el tercero tu amparo es gratis.</p>
+                    <p class="bit-1">El costo del amparo es de $22,500.00 de los cuales tendrás que hacer un pago de $13,000.00 al momento de contratar y los restantes $9,500.00 al final.</p>
+                    <p class="bit-1">Descuentos: Por el primer médico que invites y contrate el amparo se te hará un descuento del 50% con el  segundo pagarás solo $7,000.00 y con el tercero tu amparo es gratis.</p>
                     <p class="bit-1"><strong>Nosotros corremos con todos los gastos de tramitación judicial</strong></p>
                     <p class="bit-1">Para contratar sigue los siguientes pasos:</p>
                     <ol class="bit-1">
