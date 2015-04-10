@@ -60,11 +60,11 @@
                     <p class="bit-1">Montecito 38, piso 8 oficina 29. Col. Napoles. World trade center. 03810 México D.F. </p>
                     <p class="bit-1">Teléfonos. 52943370,  52944965, fax 55899147 ext. 11</p>
                     <p class="bit-1">Conmutador. 90002640 ext. 47</p>
-                    <p class="bit-1">Correo electrónico. <a href="mailto:contacto@defensamedicolegal.com.mx" target="_self" title="contacto@defensamedicolegal.com.mx">contacto@defensamedicolegal.com.mx</a></p>
+                    <p class="bit-1">Correo electrónico. <a href="mailto:contacto@defensamedicolegal.com.mx" target="_blank" title="contacto@defensamedicolegal.com.mx">contacto@defensamedicolegal.com.mx</a></p>
                 </div>
                 <div class="clearfix privacy-policy bit-40">
                     <p class="bit-1">&copy; 2014 Asociación Internacional en Defensa de los derechos del Médico</p>
-                    <p class="bit-1"><a href="/aviso-de-privacidad" title="Aviso de Privacidad" target="_blank">Aviso de Privacidad</a></p>
+                    <p class="bit-1"><a href="/aviso-de-privacidad" title="Aviso de Privacidad" target="_self">Aviso de Privacidad</a></p>
                 </div>
             </footer>
             <a href="#begin" title="Subir"></a>
