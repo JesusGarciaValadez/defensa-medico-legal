@@ -22,7 +22,7 @@
         <script type="text/javascript"></script>
     </head>
 
-    <body class="@yield('section-class') begin">
+    <body class="@yield('section-class')" id="begin">
         <div class="wrapper central clearfix bit-1">
             <header class="internal clearfix bit-1">
                 <h1 class="bit-3">Asociación Internacional en Defesa de los Derechos del Médico<img src="" alt=""></h1>

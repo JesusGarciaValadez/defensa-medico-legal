@@ -1,65 +1,92 @@
 .home
-    .internal
-        > img
-            border-bottom: 5px solid $text-highlighted
-            padding: 0
-        .advance
-            display: flex
-            img,p.bit-666
-                align-content: flex-start
-            img
-                align-content: center
-                float: none
-                height: 100px
-                margin: 25px auto 0
-            p
-                @include font-mask( normal, em( 15, 16 ), 1.5em, $lato-regular, $text-gray )
-        aside
-
-            p
-                @include font-mask( normal, em( 15, 16 ), 1.5em, $lato-regular, $text-gray )
-                text-align: center
-        hr
-            border: 0 none transparent
-            border-bottom: 1px solid $footer-text
-            display: block
-            height: 0
-            margin: 1em auto
-        .sign
-            background-color: $tweet-bar
-            box-sizing: box-sizing
-            clear: both
-            display: block
-            float: none
-            margin: 0 auto
-            padding: 10px 20px
-            p
-                color: $footer-text
-                margin: 1em auto
+    .wrapper
+        .internal
+            > img
+                border-bottom: 5px solid $text-highlighted
                 padding: 0
-                a
-                    color: $text-gray
-                    text-decoration: none
-                    &:hover
-                        color: $text-highlighted
-        .affiliation
-            display: flex
-            aside,.commission
-                align-self: stretch
-            aside
-                figure
-                    figcaption
-                        p
-                            @include font-mask( normal, em( 60, 16 ), 1em, $lato-bold, #366796 )
-                            text-align: center
-                            margin: 16px auto
-                            padding: 0
-                    img
-                p
+            .advance
+                display: flex
+                img,p.bit-666,span.bit-666
+                    align-content: flex-start
+                img
+                    align-content: center
                     float: none
-                    margin: 1em auto
-            .commission
-                figure
+                    height: 100px
+                    margin: 10px auto
+                > p, span
+                    @include font-mask( normal, em( 15, 16 ), 1.5em, $lato-regular, $text-gray )
                     a
+                        display: flex
+                        text-decoration: none
+                        &:hover
+                            color: $text-highlighted
+                            text-decoration: underline
+            .first
+                display: block
+                p,a
+                    display: block !important
+                img, span
+                    clear: both
+                    display: block
+                    margin: 0 auto
+                img
+                    height: auto
+            .sign
+                background-color: $tweet-bar
+                box-sizing: box-sizing
+                clear: both
+                display: block
+                float: none
+                margin: 0 auto
+                padding: 10px 20px
+                p
+                    color: $footer-text
+                    margin: 1em auto
+                    padding: 0
+                    a
+                        color: $text-gray
+                        text-decoration: none
+                        &:hover
+                            color: $text-highlighted
+            > aside
+                display: flex
+                img,p
+                    align-content: stretch
+                img
+                p
+                    @include font-mask( normal, em( 15, 16 ), 1.5em, $lato-regular, $text-gray )
+                    align-content: center
+                    height: 60px
+                    margin: 60px auto 0
+                    text-align: center
+            > p
+                display: block
+                float: none
+                margin: 1em auto 0
+            hr
+                border: 0 none transparent
+                border-bottom: 1px solid $footer-text
+                display: block
+                height: 0
+                margin: 1em auto
+            .affiliation
+                display: flex
+                aside,.commission
+                    align-self: stretch
+                aside
+                    figure
+                        figcaption
+                            p
+                                @include font-mask( normal, em( 60, 16 ), 1em, $lato-bold, #366796 )
+                                text-align: center
+                                margin: 16px auto
+                                padding: 0
                         img
-                    figcaption
+                    p
+                        float: none
+                        margin: 1em auto
+                .commission
+                    figure
+                        a
+                            img
+                        figcaption
