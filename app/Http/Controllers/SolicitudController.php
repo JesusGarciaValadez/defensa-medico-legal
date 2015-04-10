@@ -38,6 +38,8 @@ class SolicitudController extends Controller {
     {
         $request = Solicitud::create( Request::all() );
 
+        $doctor  = Request::input( 'nombre_doctor' );
+        $email   = Request::input( 'email' );
         $mail = new \PHPMailer(true); // notice the \  you have to use root namespace here
         try
         {
@@ -48,12 +50,13 @@ class SolicitudController extends Controller {
             $mail->SMTPSecure = "ssl"; // or ssl
             $mail->Host = "smtp.gmail.com";
             $mail->Port = 465; // most likely something different for you. This is the mailtrap.io port i use for testing.
-            $mail->Username = "leroutezero@gmail.com";
-            $mail->Password = "*Gm41l-Y1sus01*";
-            $mail->setFrom("contacto@defensamedicolegal.com.mx", "Defensa Medico Legal");
-            $mail->Subject = "Test";
-            $mail->MsgHTML("This is a test");
-            $mail->addAddress("jesus.garciav@me.com", "Yisus");
+            $mail->Username = "contactodefensamedicolegal@gmail.com";
+            $mail->Password = "Ra87-@tfg";
+            $mail->setFrom( "contactodefensamedicolegal@gmail.com", "Defensa Medico Legal" );
+            $mail->Subject = "Datos de tu solicitud";
+            $mail->isHTML(true);// Set email format to HTML
+            $mail->Body    = '<h1>Recibimos tu solicitud ¡Muchas gracias!</h1><p>Recuerda, los datos de depósito son a la cuenta número: 4041280041, clabe: 021180040412800414 de HSBC, a nombre de Arroyo Abogados S.C.</p><p><b>Contáctanos</b></p><ul><li>Montecito 38, piso 8 oficina 29. Col. Napoles. World trade center.</li><li>03810 México D.F.</li><li>Teléfonos. 52943370, 52944965, fax 55899147 ext. 11</li><li>Conmutador. 90002640 ext. 47</li><li>Correo electrónico. <a href="mailto:contacto@defensamedicolegal.com.mx" title="contacto@defensamedicolegal.com.mx" target="_blank">contacto@defensamedicolegal.com.mx</a></li>';
+            $mail->addAddress( $email, $doctor );
             $mail->send();
         }
         catch ( phpmailerException $e )
@@ -64,7 +67,7 @@ class SolicitudController extends Controller {
         {
             dd( $e );
         }
-        die('success');
+        //die('success');
 
         return redirect()->route('agradecimiento');
     }
