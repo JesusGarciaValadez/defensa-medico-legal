@@ -46,26 +46,23 @@
                         <li>
                             <a href="/beneficios" target="_self" title="Beneficios">Beneficios</a>
                             <ul class="clearfix">
-                                <li><a href="/corte-interamericana-de-derechos-humanos" target="_self" title="Corte Interamericana de Derechos Humanos">Corte Interamericana de Derechos Humanos</a></li>
-                                <li><a href="/respaldo-internacional" target="_self" title="Respaldo Internacional">Respaldo Internacional</a></li>
+                                <li><a href="/legislacion-internacional" target="_self" title="Legislación Internacional">Legislación Internacional</a></li>
                             </ul>
                         </li>
-                        <li><a href="/afiliate" target="_self" title="Afíliate">Afíliate</a></li>
+                        <li><a href="/solicitud" target="_self" title="Solicitud">Solicitud</a></li>
                     </ul>
                 </nav>
             </header>
             @yield('content')
             <footer class="internal clearfix bit-1">
-                <div class="clearfix contact bit-3">
+                <div class="clearfix contact bit-60">
                     <p class="contact-title bit-1">Contáctanos</p>
-                    <ul class="bit-1">
-                        <li class="bit-1"><a href="mailto:informes@aiddem.com" target="_blank" title="informes@aiddem.com">informes@aiddem.com</a></li>
-                        <li class="bit-1"><a href="mailto:pagos@aiddem.com" title="pagos@aiddem.com" target="_blank">pagos@aiddem.com</a></li>
-                        <li class="bit-1"><a href="mailto:documentos@aiddem.com" title="documentos@aiddem.com" target="_blank">documentos@aiddem.com</a></li>
-                        <li class="bit-1">Tel: +52 55 8421 5531</li>
-                    </ul>
+                    <p class="bit-1">Montecito 38, piso 8 oficina 29. Col. Napoles. World trade center. 03810 México D.F. </p>
+                    <p class="bit-1">Teléfonos. 52943370,  52944965, fax 55899147 ext. 11</p>
+                    <p class="bit-1">Conmutador. 90002640 ext. 47</p>
+                    <p class="bit-1">Correo electrónico. <a href="mailto:contacto@defensamedicolegal.com.mx" target="_self" title="contacto@defensamedicolegal.com.mx">contacto@defensamedicolegal.com.mx</a></p>
                 </div>
-                <div class="clearfix privacy-policy bit-666">
+                <div class="clearfix privacy-policy bit-40">
                     <p class="bit-1">&copy; 2014 Asociación Internacional en Defensa de los derechos del Médico</p>
                     <p class="bit-1"><a href="/aviso-de-privacidad" title="Aviso de Privacidad" target="_blank">Aviso de Privacidad</a></p>
                 </div>

@@ -7,8 +7,7 @@
 @section( 'content' )
             <section class="internal clearfix content bit-1">
                 <article class="clearfix bit-1">
-                    {!! Html::image( 'img/corte-interamericana-de-derechos-humanos/logo-corte-interamericana-de-derechos-humanos.jpg', 'Corte Interamericana de Derechos Humanos', [ 'class' => 'bit-1' ] ) !!}
-                    <h1 class="bit-1">Corte Interamericana de Derechos Humanos</h1>
+                    {!! Html::image( 'img/corte-interamericana-de-derechos-humanos/banderas.jpg', 'Banderas
                     <p class="bit-1">La CIDH es un órgano principal y autónomo de la Organización de los Estados Americanos (OEA) encargado de la promoción y protección de los derechos humanos en el continente americano.  Está integrada por siete miembros independientes que se desempeñan en forma personal y tiene su sede en Washington, D.C. Fue creada por la OEA en 1959 y, en forma conjunta con la Corte Interamericana de Derechos Humanos (Corte IDH), instalada en 1979, es una institución del Sistema Interamericano de protección de los derechos humanos (SIDH).</p>
                     <p class="bit-1">La CIDH realiza su trabajo con base en tres pilares de trabajo:</p>
                     <ul class="bit-1">

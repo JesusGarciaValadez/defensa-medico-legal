@@ -29,11 +29,11 @@ Route::get('/servicios', function () { return view('servicios'); } );
 
 Route::get('/beneficios', function () { return view('beneficios'); } );
 
-Route::get('/corte-interamericana-de-derechos-humanos', function () { return view('corte-interamericana-de-derechos-humanos'); } );
+//Route::get('/corte-interamericana-de-derechos-humanos', function () { return view('corte-interamericana-de-derechos-humanos'); } );
 
-Route::get('/respaldo-internacional', function () { return view('respaldo-internacional'); } );
+Route::get('/legislacion-internacional', function () { return view('legislacion-internacional'); } );
 
-Route::get('/afiliate', function () { return view('afiliate'); } );
+Route::get('/solicitud', function () { return view('solicitud'); } );
 
 Route::get('/contrato', function () { return view('contrato'); } );
 

@@ -68,9 +68,12 @@ ul, ol
                         margin: 0
                         padding: 0
                         position: relative
-                        &:nth-child( 2 ),&:nth-child( 6 )
+                        &:nth-child( 2 )
                             ul
                                 bottom: -95px
+                        &:nth-child( 6 )
+                            ul
+                                bottom: -47px
                         a
                             color: $text-gray
                             display: block
@@ -111,8 +114,16 @@ ul, ol
                 align-self: flex-start
             .contact
                 .contact-title
-                    @include font-mask( normal, em( 12, 16 ), 1.5em, $lato-regular, $black-color )
+                    @include font-mask( normal, em( 14, 16 ), 1.5em, $lato-regular, $black-color )
                     margin: 1em auto
+                p
+                    @include font-mask( normal, em( 12, 16 ), 1.5em, $lato-regular, $footer-text )
+                    margin: 0 auto
+                    a
+                        color: $footer-text
+                        text-decoration: none
+                        &:hover
+                            color: $text-highlighted
                 ul
                     margin: 0
                     padding: 0
@@ -129,7 +140,7 @@ ul, ol
                                 color: $text-highlighted
             .privacy-policy
                 p
-                    @include font-mask( normal, em( 16, 16 ), 1.5em, $lato-regular, $text-gray )
+                    @include font-mask( normal, em( 14, 16 ), 1.5em, $lato-regular, $text-gray )
                     float: right
                     text-align: right
                     a

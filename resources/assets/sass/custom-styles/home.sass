@@ -3,20 +3,19 @@
         .internal
             > img
                 border-bottom: 5px solid $text-highlighted
+                display: block
+                float: none
+                margin: 0 auto
                 padding: 0
             .advance
-                display: flex
                 img,p.bit-666,span.bit-666
-                    align-content: flex-start
                 img
-                    align-content: center
+                    display: block
                     float: none
-                    height: 100px
                     margin: 10px auto
                 > p, span
                     @include font-mask( normal, em( 15, 16 ), 1.5em, $lato-regular, $text-gray )
                     a
-                        display: flex
                         text-decoration: none
                         &:hover
                             color: $text-highlighted
@@ -31,6 +30,12 @@
                     margin: 0 auto
                 img
                     height: auto
+            .second
+                img
+                    margin: 18px auto
+            .third
+                img
+                    margin: 15px auto
             .sign
                 background-color: $tweet-bar
                 box-sizing: box-sizing
@@ -60,6 +65,7 @@
                     margin: 60px auto 0
                     text-align: center
             > p
+                clear: both
                 display: block
                 float: none
                 margin: 1em auto 0
