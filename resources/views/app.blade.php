@@ -25,7 +25,11 @@
     <body class="@yield('section-class')" id="begin">
         <div class="wrapper central clearfix bit-1">
             <header class="internal clearfix bit-1">
-                <h1 class="bit-3">Asociación Internacional en Defesa de los Derechos del Médico<img src="" alt=""></h1>
+                <h1 class="bit-3 clearfix">
+                    <a href="/" target="_self" title="Consejo Mexicano de la Defensa Médico Legal" class="clearfix">
+                        {!! Html::image( 'img/home/consejo-mexicano-de-la-defensa-medico-legal.png', 'Consejo Mexicano de la Defensa Médico Legal' ) !!}
+                    </a>
+                </h1>
                 <nav class="clearfix bit-70 desktop">
                     <ul class="clearfix bit-1">
                         <li><a href="/" target="_self" title="Inicio">Inicio</a></li>
