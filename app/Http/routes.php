@@ -35,6 +35,10 @@ Route::get('/respaldo-internacional', function () { return view('respaldo-intern
 
 Route::get('/afiliate', function () { return view('afiliate'); } );
 
+Route::get('/contrato', function () { return view('contrato'); } );
+
+Route::get('/aviso-de-privacidad', function () { return view('aviso-de-privacidad'); } );
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
