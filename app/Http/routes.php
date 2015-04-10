@@ -17,15 +17,15 @@ Route::get( '/home', 'HomeController@index' );
 
 Route::get( '/quienes-somos', function () { return view( 'quienes-somos' ); } );
 
-Route::get( '/aiddem', function () { return view( 'aiddem' ); } );
+//Route::get( '/aiddem', function () { return view( 'aiddem' ); } );
 
-Route::get( '/que-hace-la-aiddem', function () { return view( 'que-hace-la-aiddem' ); } );
+//Route::get( '/que-hace-la-aiddem', function () { return view( 'que-hace-la-aiddem' ); } );
 
 Route::get( '/art-272', function () { return view( 'art272' ); } );
 
 Route::get( '/art-81', function () { return view( 'art81' ); } );
 
-Route::get( '/servicios', function () { return view( 'servicios' ); } );
+//Route::get( '/servicios', function () { return view( 'servicios' ); } );
 
 Route::get( '/beneficios', function () { return view( 'beneficios' ); } );
 

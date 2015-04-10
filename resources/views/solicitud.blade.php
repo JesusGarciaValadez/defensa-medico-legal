@@ -8,15 +8,15 @@
             <section class="internal clearfix content bit-1">
                 <article class="clearfix bit-1">
                     <h1 class="bit-1">Solicitud</h1>
-                    <h2 class="bit-1">Gracias por interesarte en ser parte de la AIDDEM, para afiliarte llena correctamente el formato como se te indica. Para seguir con tu proceso completa la información que se te solicita.</h2>
+                    <h2 class="bit-1">Si te interesa ser parte del consejo, llena correctamente el formato de solicitud</h2>
                     <p class="bit-2"><a href="/contrato" target="_self" title="Ver Contrato">Ver Contrato</a></p>
                     <p class="bit-2"><a href="/aviso-de-privacidad" target="_self" title="Ver Aviso de Privacidad">Ver Aviso de Privacidad</a></p>
                     {!! Form::open( [ 'action' => 'SolicitudController@store' ], [ 'class' => 'bit-1 clearfix' ] ) !!}
                         <fieldset class="bit-1 clearfix">
-                            <legend class="bit-1">Formato de solicitud a la AIDDEM</legend>
+                            <legend class="bit-1">Formato de solicitud</legend>
                             <p class="bit-1">Llena correctamente como se te indica</p>
                             <div class="input bit-1">
-                                {!! Form::label( 'nombre_doctor', 'Nombre del doctor', [ 'class' => 'bit-1' ] ) !!}
+                                {!! Form::label( 'nombre_doctor', 'Nombre del médico', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'nombre_doctor', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
                             <div class="input bit-1">
@@ -364,7 +364,7 @@
                                 {!! Form::text( 'direccion_postal', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
                             <div class="input bit-1">
-                                {!! Form::label( 'confirmed_contract', 'Acepto los términos del contrato', [ 'class' => 'bit-1' ] ) !!}
+                                {!! Form::label( 'confirmed_contract', 'Por medio de la presente, solicito ser parte del consejo', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::checkbox( 'confirmed_contract' ) !!}
                             </div>
                             <div class="input bit-1">
