@@ -11,9 +11,14 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'HomeController@index');
 
-Route::get('home', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
+
+Route::get('/art-272', function ()
+{
+    return view('art272');
+} );
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
