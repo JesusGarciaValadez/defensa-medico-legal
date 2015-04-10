@@ -1,21 +1,157 @@
 body,html
-    padding: 0
-    margin: 0
-    font-family: Helvetica, Arial, sans-serif
-    background-color: #fff
-    font-size: 100%
+    background-color: $background-gray
     color: #00559a
+    font-family: Helvetica, Arial, sans-serif
+    font-size: 100%
+    margin: 0
+    padding: 0
 img
-    vertical-align: middle
-    max-width: 100%
-    height: auto
     border: 0
+    height: auto
+    max-width: 100%
+    vertical-align: middle
 .wrapper
+    box-sizing: border-box
     display: table
     height: 100%
+    padding: 0
+    position: relative
     width: 100%
 .central
+    background-color: $white-color
+    box-shadow: 0 0 5px 5px #D1D1D1
+    box-sizing: border-box
     clear: both
+    float: none !important
     display: block
     margin: 0 auto
-    width: 600px
+    width: 960px
+.internal
+    float: none !important
+    padding: 0 30px
+p, figcaption
+    @include font-mask( normal, em( 16, 16 ), 1.5em, $lato-regular, $text-gray )
+    text-align: left
+.begin
+    .wrapper
+        header
+            display: flex
+            position: relative
+            z-index: 10
+            h1
+                align-self: flex-start
+                color: transparent
+                max-height: 100px
+                img
+            nav
+                align-self: center
+                ul
+                    display: flex
+                    box-sizing: border-box
+                    margin: 0 auto
+                    padding
+                    > li
+                        border-right: 1px solid $text-highlighted
+                        &:last-child
+                            border: 0 none transparent
+                    li
+                        @include font-mask( normal, 12px , 1.5em, $lato-regular, $text-gray )
+                        align-self: stretch
+                        box-sizing: border-box
+                        list-style: none outside
+                        margin: 0
+                        padding: 0
+                        position: relative
+                        &:nth-child( 2 ),&:nth-child( 6 ), a
+                            padding: 5px 10px
+                            &:hover
+                                color: $text-highlighted
+                        &:nth-child( 2 )
+                            ul
+                                bottom: -85px
+                        &:nth-child( 6 )
+                            ul
+                                bottom: -85px
+                        a
+                            color: $text-gray
+                            display: block
+                            text-align: center
+                            text-decoration: none
+                            width: 100%
+                        ul
+                            background-color: $white-color
+                            display: none
+                            left: 0
+                            padding: 0
+                            position: absolute
+                            width: 280px
+                            li
+                                border: 0 none transparent
+                                border-bottom: 1px solid $text-highlighted
+                                list-style: none outside
+                                padding: 10px
+                                text-align: left
+                                &:last-child
+                                    border: 0 none transparent
+                                a
+                                    font-size: 12px
+                                    text-align: left
+                        &:hover
+                            ul
+                                display: block
+        footer
+            background-color: $background-footer
+            box-sizing: border-box
+            display: flex
+            padding: 20px 50px
+            .contact,.privacy-policy
+                align-self: flex-start
+            .contact
+                .contact-title
+                    @include font-mask( normal, em( 12, 16 ), 1.5em, $lato-regular, $black-color )
+                    margin: 1em auto
+                ul
+                    margin: 0
+                    padding: 0
+                    li
+                        @include font-mask( normal, em( 12, 16 ), 1.5em, $lato-regular, $text-highlighted )
+                        list-style: none outside
+                        margin: 0
+                        padding: 0
+                        a
+                            color: $footer-text
+                            text-decoration: none
+                        &:hover
+                            a
+                                color: $text-highlighted
+            .privacy-policy
+                p
+                    @include font-mask( normal, em( 16, 16 ), 1.5em, $lato-regular, $text-gray )
+                    float: right
+                    text-align: right
+                    a
+                        color: $black-color
+                        text-decoration: none
+        a[title="Subir"]
+            background-color: #323232
+            border-radius: 10px
+            bottom: 20px
+            color: transparent
+            display: flex
+            height: 51px
+            position: fixed
+            right: 20px
+            width: 51px
+            &:before
+                content: ""
+                border-top: 1px solid #616161
+            &:after
+                @include font-mask( bold, em( 30, 16 ), 1em, $lato-regular, $white-color )
+                align-self: center
+                content: "⌃"
+                display: block
+                height: 18px
+                margin: 0 auto
+                text-align: center
+                width: 26px
+

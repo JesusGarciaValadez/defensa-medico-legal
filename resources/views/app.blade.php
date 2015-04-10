@@ -19,57 +19,55 @@
 
         {!! Html::style( 'css/main.css' ) !!}
         {!! Html::script( 'js/vendor/modernizr.min.js' ) !!}
-        <script type="text/javascript">
-
-        </script>
+        <script type="text/javascript"></script>
     </head>
 
-    <body class="@yield('section-class')" begin>
-        <div class="wrapper clearfix">
-            <header class="central clearfix">
-                <h1>Asociación Internacional en Defesa de los Derechos del Médico<img src="" alt=""></h1>
-                <nav class="clearfix">
-                    <ul class="clearfix">
-                        <li><a href="" title="Inicio">Inicio</a></li>
+    <body class="@yield('section-class') begin">
+        <div class="wrapper central clearfix bit-1">
+            <header class="internal clearfix bit-1">
+                <h1 class="bit-3">Asociación Internacional en Defesa de los Derechos del Médico<img src="" alt=""></h1>
+                <nav class="clearfix bit-70 desktop">
+                    <ul class="clearfix bit-1">
+                        <li><a href="" target="_blank" title="Inicio">Inicio</a></li>
                         <li>
                             ¿Quiénes Sómos?
                             <ul class="clearfix">
-                                <li>AIDDEM</li>
-                                <li>¿Qué hace la AIDDEM?</li>
+                                <li><a href="" target="_blank" title="AIDDEM">AIDDEM</a></li>
+                                <li><a href="" target="_blank" title="¿Qué hace la AIDDEM?">¿Qué hace la AIDDEM?</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Art. 272 LGS</a></li>
-                        <li><a href="">Art. 81 LGS</a></li>
-                        <li><a href="">Servicios</a></li>
+                        <li><a href="" target="_blank" title="Art. 272 LGS">Art. 272 LGS</a></li>
+                        <li><a href="" target="_blank" title="Art. 81 LGS">Art. 81 LGS</a></li>
+                        <li><a href="" target="_blank" title="Servicios">Servicios</a></li>
                         <li>
                             Servicios
                             <ul class="clearfix">
-                                <li>Corte Interamericana de Derechos Humanos</li>
-                                <li>respaldo Internacional</li>
+                                <li><a href="" target="_blank" title="Corte Interamericana de Derechos Humanos">Corte Interamericana de Derechos Humanos</a></li>
+                                <li><a href="" target="_blank" title="Respaldo Internacional">Respaldo Internacional</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Afíliate</a></li>
+                        <li><a href="" target="_blank" title="Afíliate">Afíliate</a></li>
                     </ul>
                 </nav>
             </header>
             @yield('content')
-            <footer class="central clearfix">
-                <div class="clearfix contact">
-                    <p class="contact-title">Contáctanos</p>
-                    <ul>
-                        <li><a href="mailto:informes@aiddem.com" target="_blank" title="informes@aiddem.com">informes@aiddem.com</a></li>
-                        <li><a href="mailto:pagos@aiddem.com" title="pagos@aiddem.com" target="_blank">pagos@aiddem.com</a></li>
-                        <li><a href="mailto:documentos@aiddem.com" title="documentos@aiddem.com" target="_blank">documentos@aiddem.com</a></li>
-                        <li>Tel: +52 55 8421 5531</li>
+            <footer class="internal clearfix bit-1">
+                <div class="clearfix contact bit-3">
+                    <p class="contact-title bit-1">Contáctanos</p>
+                    <ul class="bit-1">
+                        <li class="bit-1"><a href="mailto:informes@aiddem.com" target="_blank" title="informes@aiddem.com">informes@aiddem.com</a></li>
+                        <li class="bit-1"><a href="mailto:pagos@aiddem.com" title="pagos@aiddem.com" target="_blank">pagos@aiddem.com</a></li>
+                        <li class="bit-1"><a href="mailto:documentos@aiddem.com" title="documentos@aiddem.com" target="_blank">documentos@aiddem.com</a></li>
+                        <li class="bit-1">Tel: +52 55 8421 5531</li>
                     </ul>
                 </div>
-                <div class="clearfix privacy-policy">
-                    <p>&copy; 2014 Asociación Internacional en Defensa de los derechos del Médico</p>
-                    <p><a href="/aviso-de-privacidad" title="Aviso de Privacidad" target="_blank">Aviso de Privacidad</a></p>
+                <div class="clearfix privacy-policy bit-666">
+                    <p class="bit-1">&copy; 2014 Asociación Internacional en Defensa de los derechos del Médico</p>
+                    <p class="bit-1"><a href="/aviso-de-privacidad" title="Aviso de Privacidad" target="_blank">Aviso de Privacidad</a></p>
                 </div>
             </footer>
-            <a href="#begin" title="Subir">Subir</a>
+            <a href="#begin" title="Subir"></a>
         </div>
         {!! Html::script( 'js/main.min.js' ) !!}
     </body>
-</script>
+</html>
