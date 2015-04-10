@@ -50,7 +50,6 @@ class CreateApplicationsTable extends Migration {
         Schema::create( 'applications', function( Blueprint $table )
         {
             $table->increments('id');
-            $table->string('tipo_servicio');
             $table->string('nombre_doctor');
             $table->string('email')->unique();
             $table->string('cedula_1')->unique();
