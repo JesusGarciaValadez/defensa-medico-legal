@@ -1,6 +1,6 @@
 @extends( 'app' )
 
-@section( 'title', 'AIDDEM - ¿Quiénes Somos?' )
+@section( 'title', '¿Quiénes Somos?' )
 
 @section( 'section-class', 'quienes-somos' )
 
