@@ -33,7 +33,7 @@ Route::get('/beneficios', function () { return view('beneficios'); } );
 
 Route::get('/legislacion-internacional', function () { return view('legislacion-internacional'); } );
 
-Route::get('/solicitud', function () { return view('solicitud'); } );
+Route::get('/solicitud', 'SolicitudController@index' );
 
 Route::get('/contrato', function () { return view('contrato'); } );
 
