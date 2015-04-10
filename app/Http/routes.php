@@ -25,7 +25,7 @@ Route::get( '/art-272', function () { return view( 'art272' ); } );
 
 Route::get( '/art-81', function () { return view( 'art81' ); } );
 
-//Route::get( '/servicios', function () { return view( 'servicios' ); } );
+Route::get( '/servicios', function () { return view( 'servicios' ); } );
 
 Route::get( '/beneficios', function () { return view( 'beneficios' ); } );
 
@@ -35,11 +35,11 @@ Route::get( '/legislacion-internacional', function () { return view( 'legislacio
 
 //Route::model( 'solicitud', 'Solicitud' );
 Route::any( 'agradecimiento', [
-                'as' => 'agradecimiento',
-                function ()
-                {
-                    return View::make( 'agradecimiento' );
-                }
+            'as' => 'agradecimiento',
+            function ()
+            {
+                return View::make( 'agradecimiento' );
+            }
 ] );
 Route::get( 'solicitud', 'SolicitudController@index' );
 Route::get( 'solicitud/crear', 'SolicitudController@create' );

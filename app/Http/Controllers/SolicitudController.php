@@ -38,6 +38,34 @@ class SolicitudController extends Controller {
     {
         $request = Solicitud::create( Request::all() );
 
+        $mail = new \PHPMailer(true); // notice the \  you have to use root namespace here
+        try
+        {
+            $mail->isSMTP(); // tell to use smtp
+            $mail->CharSet = "utf-8"; // set charset to
+            $mail->SMTPDebug = 1;
+            $mail->SMTPAuth = true;  // use smpt auth
+            $mail->SMTPSecure = "ssl"; // or ssl
+            $mail->Host = "smtp.gmail.com";
+            $mail->Port = 465; // most likely something different for you. This is the mailtrap.io port i use for testing.
+            $mail->Username = "leroutezero@gmail.com";
+            $mail->Password = "*Gm41l-Y1sus01*";
+            $mail->setFrom("contacto@defensamedicolegal.com.mx", "Defensa Medico Legal");
+            $mail->Subject = "Test";
+            $mail->MsgHTML("This is a test");
+            $mail->addAddress("jesus.garciav@me.com", "Yisus");
+            $mail->send();
+        }
+        catch ( phpmailerException $e )
+        {
+            dd( $e );
+        }
+        catch ( Exception $e )
+        {
+            dd( $e );
+        }
+        die('success');
+
         return redirect()->route('agradecimiento');
     }
 
