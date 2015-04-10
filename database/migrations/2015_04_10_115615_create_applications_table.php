@@ -51,10 +51,10 @@ class CreateApplicationsTable extends Migration {
         {
             $table->increments('id');
             $table->string('nombre_doctor');
-            $table->string('email')->unique();
-            $table->string('cedula_1')->unique();
-            $table->string('cedula_2')->unique()->nullable();
-            $table->string('cedula_3')->unique()->nullable();
+            $table->string('email');
+            $table->string('cedula_1');
+            $table->string('cedula_2')->nullable();
+            $table->string('cedula_3')->nullable();
             $table->string('especialidad');
             $table->string('telefono_contacto');
             $table->string('telefono_celular');

@@ -1,4 +1,4 @@
-<?php namespace App\Events;
+<?php namespace DefensaMedicoLegal\Events;
 
 abstract class Event {
 

@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace DefensaMedicoLegal\Commands;
 
 abstract class Command {
 

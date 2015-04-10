@@ -34,14 +34,22 @@ Route::get( '/beneficios', function () { return view( 'beneficios' ); } );
 Route::get( '/legislacion-internacional', function () { return view( 'legislacion-internacional' ); } );
 
 //Route::model( 'solicitud', 'Solicitud' );
-Route::get( '/solicitud', 'SolicitudController@index' );
-Route::get( '/solicitud/crear', 'SolicitudController@create' );
+Route::any( 'agradecimiento', [
+                'as' => 'agradecimiento',
+                function ()
+                {
+                    return View::make( 'agradecimiento' );
+                }
+] );
+Route::get( 'solicitud', 'SolicitudController@index' );
+Route::get( 'solicitud/crear', 'SolicitudController@create' );
+Route::post( 'solicitud/store', 'SolicitudController@store' );
 
 Route::get( '/contrato', function () { return view( 'contrato' ); } );
 
 Route::get( '/aviso-de-privacidad', function () { return view( 'aviso-de-privacidad' ); } );
 
-Route::controllers([
+/*Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController'
-]);
+]);*/
