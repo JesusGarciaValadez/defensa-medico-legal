@@ -8,7 +8,7 @@
             <section class="internal clearfix content bit-1">
                 <article class="clearfix bit-1">
                     <h1 class="bit-1">Servicios</h1>
-                    {!! Html::image( 'img/servicios/estetoscopio-y-martillo.jpg', 'Estetoscopio y martillo', [ 'class' => 'bit-80' ] ) !!}
+                    {!! Html::image( 'img/servicios/derecho-medico-sanitario.jpg', 'Estetoscopio y martillo', [ 'class' => 'bit-80' ] ) !!}
                     <h2 class="bit-1">AFÍLIATE HOY Y CONOCE NUESTROS SERVICIOS</h2>
                     <h3 class="bit-1">1.-Amparo Individual</h3>
                     <p class="bit-1">Amparo en el cual se busca la declaración judicial de inconstitucionalidad de la norma general que se quiere aplicar en tu perjuicio, solicitando previamente la  suspensión con la cual se evitará que de inmediato se aplique la norma en tu perjuicio hasta en tanto se resuelva en definitiva el amparo.</p>
@@ -34,5 +34,6 @@
                         </li>
                     </ol>
                     <p class="bit-1">Para iniciar el trámite y de inmediato tu defensa legal recibimos papeles hasta el día 16 de abril de este año.</p>
+                    {!! Html::image( 'img/servicios/balanza-y-serpiente.png', 'Balanza y serpiente', [ 'class' => 'bit-20' ] ) !!}
             </section>
 @stop

@@ -7,7 +7,7 @@
 @section( 'content' )
             <section class="internal clearfix content bit-1">
                 <article class="clearfix bit-1">
-                    {!! Html::image( 'img/respaldo-internacional/comision-interamericana-de-derechos-humanos.jpg', 'Comision Interamericana de Derechos Humanos', [ 'class' => 'bit-1' ] ) !!}
+                    {!! Html::image( 'img/home/banderas.jpg', 'Banderas', [ 'class' => 'bit-1' ] ) !!}
                     <h1 class="bit-1">ORGANIZACIONES INTERNACIONALES EN MATERIA DE DERECHOS HUMANOS.</h1>
                     <ul class="bit-1">
                         <li>Corte Interamericana de Derechos Humanos.</li>
