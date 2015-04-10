@@ -28,25 +28,25 @@
                 <h1 class="bit-3">Asociación Internacional en Defesa de los Derechos del Médico<img src="" alt=""></h1>
                 <nav class="clearfix bit-70 desktop">
                     <ul class="clearfix bit-1">
-                        <li><a href="" target="_blank" title="Inicio">Inicio</a></li>
+                        <li><a href="/" target="_self" title="Inicio">Inicio</a></li>
                         <li>
                             ¿Quiénes Sómos?
                             <ul class="clearfix">
-                                <li><a href="" target="_blank" title="AIDDEM">AIDDEM</a></li>
-                                <li><a href="" target="_blank" title="¿Qué hace la AIDDEM?">¿Qué hace la AIDDEM?</a></li>
+                                <li><a href="" target="_self" title="AIDDEM">AIDDEM</a></li>
+                                <li><a href="" target="_self" title="¿Qué hace la AIDDEM?">¿Qué hace la AIDDEM?</a></li>
                             </ul>
                         </li>
-                        <li><a href="" target="_blank" title="Art. 272 LGS">Art. 272 LGS</a></li>
-                        <li><a href="" target="_blank" title="Art. 81 LGS">Art. 81 LGS</a></li>
-                        <li><a href="" target="_blank" title="Servicios">Servicios</a></li>
+                        <li><a href="/art-272" target="_self" title="Art. 272 LGS">Art. 272 LGS</a></li>
+                        <li><a href="" target="_self" title="Art. 81 LGS">Art. 81 LGS</a></li>
+                        <li><a href="" target="_self" title="Servicios">Servicios</a></li>
                         <li>
                             Servicios
                             <ul class="clearfix">
-                                <li><a href="" target="_blank" title="Corte Interamericana de Derechos Humanos">Corte Interamericana de Derechos Humanos</a></li>
-                                <li><a href="" target="_blank" title="Respaldo Internacional">Respaldo Internacional</a></li>
+                                <li><a href="" target="_self" title="Corte Interamericana de Derechos Humanos">Corte Interamericana de Derechos Humanos</a></li>
+                                <li><a href="" target="_self" title="Respaldo Internacional">Respaldo Internacional</a></li>
                             </ul>
                         </li>
-                        <li><a href="" target="_blank" title="Afíliate">Afíliate</a></li>
+                        <li><a href="" target="_self" title="Afíliate">Afíliate</a></li>
                     </ul>
                 </nav>
             </header>
