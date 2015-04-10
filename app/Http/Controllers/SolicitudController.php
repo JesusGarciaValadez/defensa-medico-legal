@@ -15,6 +15,7 @@ class SolicitudController extends Controller {
 	public function index()
 	{
 		//
+		return view( 'solicitud' );
 	}
 
 	/**
@@ -24,7 +25,7 @@ class SolicitudController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return view( 'solicitud' );
 	}
 
 	/**
@@ -35,6 +36,7 @@ class SolicitudController extends Controller {
 	public function store()
 	{
 		//
+		return view( 'solicitud' );
 	}
 
 	/**
@@ -45,7 +47,7 @@ class SolicitudController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		return abort( 404 );
 	}
 
 	/**
@@ -56,7 +58,7 @@ class SolicitudController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+		return abort( 404 );
 	}
 
 	/**
@@ -67,7 +69,7 @@ class SolicitudController extends Controller {
 	 */
 	public function update($id)
 	{
-		//
+		return abort( 404 );
 	}
 
 	/**
@@ -78,7 +80,7 @@ class SolicitudController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		return abort( 404 );
 	}
 
 }

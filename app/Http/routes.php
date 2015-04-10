@@ -11,35 +11,37 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get( '/', 'HomeController@index' );
 
-Route::get('/home', 'HomeController@index');
+Route::get( '/home', 'HomeController@index' );
 
-Route::get('/quienes-somos', function () { return view('quienes-somos'); } );
+Route::get( '/quienes-somos', function () { return view( 'quienes-somos' ); } );
 
-Route::get('/aiddem', function () { return view('aiddem'); } );
+Route::get( '/aiddem', function () { return view( 'aiddem' ); } );
 
-Route::get('/que-hace-la-aiddem', function () { return view('que-hace-la-aiddem'); } );
+Route::get( '/que-hace-la-aiddem', function () { return view( 'que-hace-la-aiddem' ); } );
 
-Route::get('/art-272', function () { return view('art272'); } );
+Route::get( '/art-272', function () { return view( 'art272' ); } );
 
-Route::get('/art-81', function () { return view('art81'); } );
+Route::get( '/art-81', function () { return view( 'art81' ); } );
 
-Route::get('/servicios', function () { return view('servicios'); } );
+Route::get( '/servicios', function () { return view( 'servicios' ); } );
 
-Route::get('/beneficios', function () { return view('beneficios'); } );
+Route::get( '/beneficios', function () { return view( 'beneficios' ); } );
 
 //Route::get('/corte-interamericana-de-derechos-humanos', function () { return view('corte-interamericana-de-derechos-humanos'); } );
 
-Route::get('/legislacion-internacional', function () { return view('legislacion-internacional'); } );
+Route::get( '/legislacion-internacional', function () { return view( 'legislacion-internacional' ); } );
 
-Route::get('/solicitud', 'SolicitudController@index' );
+//Route::model( 'solicitud', 'Solicitud' );
+Route::get( '/solicitud', 'SolicitudController@index' );
+Route::get( '/solicitud/crear', 'SolicitudController@create' );
 
-Route::get('/contrato', function () { return view('contrato'); } );
+Route::get( '/contrato', function () { return view( 'contrato' ); } );
 
-Route::get('/aviso-de-privacidad', function () { return view('aviso-de-privacidad'); } );
+Route::get( '/aviso-de-privacidad', function () { return view( 'aviso-de-privacidad' ); } );
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+	'password' => 'Auth\PasswordController'
 ]);

@@ -58,6 +58,7 @@ class CreateApplicationsTable extends Migration {
             $table->string('cedula_3')->unique()->nullable();
             $table->string('especialidad');
             $table->string('telefono_contacto');
+            $table->string('telefono_celular');
             $table->string('parte_republica');
             $table->string('direccion_calle_1');
             $table->string('direccion_calle_2')->nullable();
