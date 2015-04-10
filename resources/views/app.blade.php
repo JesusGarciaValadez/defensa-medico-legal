@@ -40,13 +40,13 @@
                     </a>
                 </h1>
                 <nav class="clearfix bit-70 desktop">
-                    <ul class="clearfix bit-1">
+                    <ul class="clearfix bit-2">
                         <li><a href="/" target="_self" title="Inicio">Inicio</a></li>
                         <li><a href="/quienes-somos" target="_self" title="¿Quiénes Sómos?">¿Quiénes Somos?</a></li>
-                        <li><a href="/art-272" target="_self" title="Art. 272 LGS">Art. 272 LGS</a></li>
-                        <li><a href="/art-81" target="_self" title="Art. 81 LGS">Art. 81 LGS</a></li>
+                        <!--li><a href="/art-272" target="_self" title="Art. 272 LGS">Art. 272 LGS</a></li>
+                        <li><a href="/art-81" target="_self" title="Art. 81 LGS">Art. 81 LGS</a></li-->
                         <li><a href="/servicios" target="_self" title="Servicios">Servicios</a></li>
-                        <li><a href="/legislacion-internacional" target="_self" title="Legislación Internacional">Legislación Internacional</a></li>
+                        <!--li><a href="/legislacion-internacional" target="_self" title="Legislación Internacional">Legislación Internacional</a></li-->
                         <li><a href="/solicitud" target="_self" title="Solicitud">Solicitud</a></li>
                     </ul>
                 </nav>

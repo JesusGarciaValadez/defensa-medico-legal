@@ -13,7 +13,7 @@
                 <section class="clearfix advance first bit-2">
                     <p class="bit-1">
                         <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5386686&fecha=25/03/2015" target="_blank" title="¡Te quieren obligar a pagar año con año por ejercer tu profesión de por vida!" class="clearfix bit-1">
-                            <span class="bit-1"><strong>¡NOTICIA!</strong> En este momento es importante iniciar la defensa de los interés y Derechos Humanos de los Médicos, a fin de que se impida la aplicación en su perjuicio de los Lineamientos a que se sujetarán el Comité Normativo Nacional de Consejos de Especialidades Médicas y los Consejos de Especialidades Médicas a los que se refiere el artículo 81 y 272 Bis de la Ley General de Salud. <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5386686&fecha=25/03/2015" target="_blank" title="Conoce más" class="bit-1">Conoce más</a></span>
+                            <span class="bit-1"><strong>¡NOTICIA!</strong> En este momento es importante iniciar la defensa de los interés y Derechos Humanos de los Médicos, a fin de que se impida la aplicación en su perjuicio de los Lineamientos a que se sujetarán el Comité Normativo Nacional de Consejos de Especialidades Médicas y los Consejos de Especialidades Médicas a los que se refiere el artículo 81 y 272 Bis de la Ley General de Salud. <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5386686&fecha=25/03/2015" target="_blank" title="Conoce más" class="bit-1">Conoce la norma que se quiere aplicar en tu contra</a></span>
                         </a>
                     </p>
                 </section>
