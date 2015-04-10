@@ -56,7 +56,7 @@
                 <div class="clearfix contact bit-60">
                     <p class="contact-title bit-1">Contáctanos</p>
                     <p class="bit-1">Montecito 38, piso 8 oficina 29. Col. Napoles. World trade center. 03810 México D.F. </p>
-                    <p class="bit-1">Teléfonos. 52943370,  52944965, fax 55899147 ext. 11</p>
+                    <p class="bit-1">Teléfonos. 52944965, fax 55899147 ext. 11</p>
                     <p class="bit-1">Conmutador. 90002640 ext. 47</p>
                     <p class="bit-1">Correo electrónico. <a href="mailto:contacto@defensamedicolegal.com.mx" target="_blank" title="contacto@defensamedicolegal.com.mx">contacto@defensamedicolegal.com.mx</a></p>
                 </div>

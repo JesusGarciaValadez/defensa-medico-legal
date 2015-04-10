@@ -2,13 +2,31 @@
     .wrapper
         .internal
             > img
-                border-bottom: 5px solid $text-highlighted
+                border-bottom: 5px solid $tweet-bar
                 display: block
                 float: none
                 margin: 0 auto
                 padding: 0
             h1
                 @include font-mask( normal, em( 22, 16 ), 1.5em, $lato-regular, $text-gray )
+            .sign
+                background-color: $text-highlighted
+                box-sizing: box-sizing
+                clear: both
+                display: block
+                float: none
+                margin: 0 auto
+                padding: 10px 20px
+                p
+                    @include font-mask( normal, em( 21, 16 ), 1.5em, $lato-bold, $white-color )
+                    float: none
+                    margin: 1em auto
+                    padding: 0
+                    text-align: center
+                    a
+                        text-decoration: none
+                        &:hover
+                            text-decoration: underline
             .advance
                 img,p.bit-666,span.bit-666
                 img
@@ -18,6 +36,7 @@
                 > p, span
                     @include font-mask( normal, em( 15, 16 ), 1.5em, $lato-regular, $text-gray )
                     a
+                        color: $black-color
                         text-decoration: none
                         &:hover
                             color: $text-highlighted
@@ -32,34 +51,12 @@
                     margin: 0 auto
                 img
                     height: auto
-            .second
-                img
-                    margin: 18px auto
-            .third
-                img
-                    margin: 15px auto
-            .sign
-                background-color: $tweet-bar
-                box-sizing: box-sizing
-                clear: both
-                display: block
-                float: none
-                margin: 0 auto
-                padding: 10px 20px
-                p
-                    color: $footer-text
-                    margin: 1em auto
-                    padding: 0
-                    a
-                        color: $text-gray
-                        text-decoration: none
-                        &:hover
-                            color: $text-highlighted
             > aside
-                display: flex
-                img,p
-                    align-content: stretch
                 img
+                    box-sizing: border-box
+                    display: block
+                    float: none
+                    margin: 30px auto 0
                 p
                     @include font-mask( normal, em( 15, 16 ), 1.5em, $lato-regular, $text-gray )
                     align-content: center
