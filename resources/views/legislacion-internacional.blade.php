@@ -1,6 +1,6 @@
 @extends( 'app' )
 
-@section( 'title', 'Beneficios - Respaldo Internacional' )
+@section( 'title', 'Legislación Internacional' )
 
 @section( 'section-class', 'respaldo' )
 
