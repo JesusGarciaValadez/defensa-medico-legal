@@ -11,7 +11,7 @@
                     <h2 class="bit-1">Gracias por interesarte en ser parte de la AIDDEM, para afiliarte llena correctamente el formato como se te indica. Para seguir con tu proceso completa la información que se te solicita.</h2>
                     <p class="bit-2"><a href="/contrato" target="_self" title="Ver Contrato">Ver Contrato</a></p>
                     <p class="bit-2"><a href="/aviso-de-privacidad" target="_self" title="Ver Aviso de Privacidad">Ver Aviso de Privacidad</a></p>
-                    {!! Form::open( array( 'action' => 'SolicitudController@index', 'class' => 'bit-1 clearfix' ) ) !!}
+                    {!! Form::model( [ 'route' => '/solicitud/store' ], [ 'class' => 'bit-1 clearfix' ] ) !!}
                         <fieldset class="bit-1 clearfix">
                             <legend class="bit-1">Formato de solicitud a la AIDDEM</legend>
                             <p class="bit-1">Llena correctamente como se te indica</p>

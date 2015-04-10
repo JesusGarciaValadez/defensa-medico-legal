@@ -63,7 +63,7 @@
                     <p class="bit-1">Correo electrónico. <a href="mailto:contacto@defensamedicolegal.com.mx" target="_blank" title="contacto@defensamedicolegal.com.mx">contacto@defensamedicolegal.com.mx</a></p>
                 </div>
                 <div class="clearfix privacy-policy bit-40">
-                    <p class="bit-1">&copy; 2014 Asociación Internacional en Defensa de los derechos del Médico</p>
+                    <p class="bit-1">&copy; 2014 Consejo Mexicano de la Defensa Médico Legal</p>
                     <p class="bit-1"><a href="/aviso-de-privacidad" title="Aviso de Privacidad" target="_self">Aviso de Privacidad</a></p>
                 </div>
             </footer>
