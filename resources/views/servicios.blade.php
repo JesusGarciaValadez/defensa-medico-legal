@@ -34,7 +34,5 @@
                         </li>
                     </ol>
                     <p class="bit-1">Para iniciar el trámite y de inmediato tu defensa legal recibimos papeles hasta el día 16 de abril de este año.</p>
-                    {!! Html::image( 'img/servicios/gente-preocupada.jpg', 'Gente preocupada', [ 'class' => 'bit-2' ] ) !!}
-                    {!! Html::image( 'img/servicios/doctor-esposado.jpg', 'Doctor esposado', [ 'class' => 'bit-2' ] ) !!}
             </section>
 @stop
