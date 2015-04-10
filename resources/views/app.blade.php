@@ -34,7 +34,7 @@
     <body class="@yield('section-class')" id="begin">
         <div class="wrapper central clearfix bit-1">
             <header class="internal clearfix bit-1">
-                <h1 class="bit-3 clearfix">
+                <h1 class="bit-30 clearfix">
                     <a href="/" target="_self" title="Consejo Mexicano de la Defensa Médico Legal" class="clearfix">
                         {!! Html::image( 'img/home/consejo-mexicano-de-la-defensa-medico-legal.png', 'Consejo Mexicano de la Defensa Médico Legal' ) !!}
                     </a>
@@ -45,7 +45,7 @@
                         <li><a href="/quienes-somos" target="_self" title="¿Quiénes Sómos?">¿Quiénes Somos?</a></li>
                         <li><a href="/art-272" target="_self" title="Art. 272 LGS">Art. 272 LGS</a></li>
                         <li><a href="/art-81" target="_self" title="Art. 81 LGS">Art. 81 LGS</a></li>
-                        <!--li><a href="/servicios" target="_self" title="Servicios">Servicios</a></li-->
+                        <li><a href="/servicios" target="_self" title="Servicios">Servicios</a></li>
                         <li><a href="/legislacion-internacional" target="_self" title="Legislación Internacional">Legislación Internacional</a></li>
                         <li><a href="/solicitud" target="_self" title="Solicitud">Solicitud</a></li>
                     </ul>
