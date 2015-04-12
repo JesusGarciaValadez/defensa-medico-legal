@@ -35,11 +35,56 @@
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em)
+/* ==========================================================================
+   iPhone 3GS/4/4S Portrait Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 480 ))
     /* Style adjustments for viewports that meet the condition */
 
-@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
-    /* Style adjustments for high resolution devices */
+/* ==========================================================================
+   iPhone 5/5S Portrait Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 568, 16 ))
+    /* Style adjustments for viewports that meet the condition */
 
+/* ==========================================================================
+   iPhone 5/5S Landscape Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 568, 16 )) and (orientation:landscape)
+    /* Style adjustments for viewports that meet the condition */
+
+/* ==========================================================================
+   iPhone 6 Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 667, 16 ))
+
+/* ==========================================================================
+   iPhone 6 Plus Landscape Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 736, 16 ))
+    .central
+        width: 100%
+
+@media only screen and (max-width: em( 736, 16 )) and (orientation:landscape)
+
+/* ==========================================================================
+   iPad
+   ========================================================================== */
+@media only screen and (max-width: em( 1024, 16 ))
+
+/* ==========================================================================
+   iPad Portrait Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 1024, 16 )) and (orientation:portrait)
+
+/* ==========================================================================
+   iPad Landscape Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 1024, 16 )) and (orientation:landscape)
+
+/* ==========================================================================
+   Desktop High Resolution
+   ========================================================================== */
+@media only screen and (min-width: em( 1919, 16 ))
 
 @import "default-styles/_print_stylesheet"
