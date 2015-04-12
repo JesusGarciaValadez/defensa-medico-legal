@@ -177,7 +177,7 @@
                                         'Haiti' => 'Haiti',
                                         'Honduras' => 'Honduras',
                                         'Jamaica' => 'Jamaica',
-                                        'Mexico" selected="selected' => 'Mexico',
+                                        'Mexico" => 'Mexico',
                                         'Netherlands Antilles' => 'Netherlands Antilles',
                                         'Nicaragua' => 'Nicaragua',
                                         'Panama ' => 'Panama ',
