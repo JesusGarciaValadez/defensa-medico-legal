@@ -40,32 +40,79 @@ class SolicitudController extends Controller {
 
         $doctor  = Request::input( 'nombre_doctor' );
         $email   = Request::input( 'email' );
+        $cedula1 = Request::input( 'cedula_1' );
+        $cedula2 = Request::input( 'cedula_2' ) || 'Ninguna';
+        $cedula3 = Request::input( 'cedula_3' ) || 'Ninguna';
+        $especialidad = Request::input( 'especialidad' );
+        $celular = Request::input( 'telefono_celular' );
+        $parteDeLaRepublica = Request::input( 'parte_republica' );
+        $direccion = Request::input( 'direccion_calle_1' );
+        $direccion2 = Request::input( 'direccion_calle_2' ) || 'Ninguna';
+        $ciudad = Request::input( 'direccion_ciudad' );
+        $estado = Request::input( 'direccion_estado' );
+        $pais = Request::input( 'direccion_pais' );
+        $codigoPostal = Request::input( 'direccion_postal' );
+        $confirmoContrato = Request::input( 'confirmed_contract' );
+        $confirmoPoliticas = Request::input( 'confirmed_policy' );
+
         $mail = new \PHPMailer(true); // notice the \  you have to use root namespace here
+
+        $mail->isSMTP(); // tell to use smtp
+        $mail->CharSet = "utf-8"; // set charset to
+        $mail->SMTPDebug = 1;
+        $mail->SMTPAuth = true;  // use smpt auth
+        $mail->SMTPSecure = "ssl"; // or ssl
+        $mail->Host = "smtp.gmail.com";
+        $mail->Port = 465; // most likely something different for you. This is the mailtrap.io port i use for testing.
+        $mail->Username = env('EMAIL_USER', ''),
+        $mail->Password = env('EMAIL_PASSWORD', ''),
+        $mail->setFrom( "contactodefensamedicolegal@gmail.com", "Defensa Medico Legal" );
+        $mail->isHTML(true);// Set email format to HTML
         try
         {
-            $mail->isSMTP(); // tell to use smtp
-            $mail->CharSet = "utf-8"; // set charset to
-            $mail->SMTPDebug = 1;
-            $mail->SMTPAuth = true;  // use smpt auth
-            $mail->SMTPSecure = "ssl"; // or ssl
-            $mail->Host = "smtp.gmail.com";
-            $mail->Port = 465; // most likely something different for you. This is the mailtrap.io port i use for testing.
-            $mail->Username = "contactodefensamedicolegal@gmail.com";
-            $mail->Password = "Ra87-@tfg";
-            $mail->setFrom( "contactodefensamedicolegal@gmail.com", "Defensa Medico Legal" );
             $mail->Subject = "Datos de tu solicitud";
-            $mail->isHTML(true);// Set email format to HTML
             $mail->Body    = '<h1>Recibimos tu solicitud ¡Muchas gracias!</h1><p>Recuerda, los datos de depósito son a la cuenta número: 4041280041, clabe: 021180040412800414 de HSBC, a nombre de Arroyo Abogados S.C.</p><p><b>Contáctanos</b></p><ul><li>Montecito 38, piso 8 oficina 29. Col. Napoles. World Trade Center.</li><li>03810 México D.F.</li><li>Teléfonos. 52944965, fax 55899147 ext. 11</li><li>Correo electrónico. <a href="mailto:contactodefensamedicolegal@gmail.com" title="contactodefensamedicolegal@gmail.com" target="_blank">contactodefensamedicolegal@gmail.com</a></li>';
             $mail->addAddress( $email, $doctor );
             $mail->send();
         }
         catch ( phpmailerException $e )
         {
-            dd( $e );
+            return redirect()->route('error');
         }
         catch ( Exception $e )
         {
-            dd( $e );
+            return redirect()->route('error');
+        }
+
+        try
+        {
+            $mail->Subject = "Datos de tu solicitud";
+            $mail->Body    = 'Nombre del médico:' . $nombre_doctor;
+            $mail->Body   += '<br />Email:' . $email;
+            $mail->Body   += '<br />Cedula 1: ' . $cedula1;
+            $mail->Body   += '<br />Cedula 2: ' . $cedula2;
+            $mail->Body   += '<br />Cedula 3: ' . $cedula3;
+            $mail->Body   += '<br />Especialidad: ' . $especialidad;
+            $mail->Body   += '<br />Telefono celular: ' . $celular;
+            $mail->Body   += '<br />¿En que parte de la Republica te encuentras?: ' . $parteDeLaRepublica;
+            $mail->Body   += '<br />Direccion: ' . $direccion;
+            $mail->Body   += '<br />Direccion: ' . $direccion2;
+            $mail->Body   += '<br />Ciudad: ' . $ciudad;
+            $mail->Body   += '<br />Estado: ' . $estado;
+            $mail->Body   += '<br />Pais: ' . $pais;
+            $mail->Body   += '<br />Codigo Postal: ' . $codigoPostal;
+            $mail->Body   += '<br />Acepto términos y condiciones del contrato: ' . $confirmoContrato;
+            $mail->Body   += '<br />He leído el aviso de privacidad: ' . $confirmoPoliticas;
+            $mail->addAddress( 'contactodefensamedicolegal@gmail.com", "Contacto Sitio Defensa Medico Legal" );
+            $mail->send();
+        }
+        catch ( phpmailerException $e )
+        {
+            return redirect()->route('error');
+        }
+        catch ( Exception $e )
+        {
+            return redirect()->route('error');
         }
         //die('success');
 
