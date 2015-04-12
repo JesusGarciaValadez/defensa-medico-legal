@@ -52,8 +52,8 @@ class SolicitudController extends Controller {
         $estado = Request::input( 'direccion_estado' );
         $pais = Request::input( 'direccion_pais' );
         $codigoPostal = Request::input( 'direccion_postal' );
-        $confirmoContrato = Request::input( 'confirmed_contract' );
-        $confirmoPoliticas = Request::input( 'confirmed_policy' );
+        $confirmoContrato = ( Request::input( 'confirmed_contract' ) === "1" ) ? "Si" : "No";
+        $confirmoPoliticas = ( Request::input( 'confirmed_policy' ) === "1" ) ? "Si" : "No";
 
         $mail = new \PHPMailer(true); // notice the \  you have to use root namespace here
 

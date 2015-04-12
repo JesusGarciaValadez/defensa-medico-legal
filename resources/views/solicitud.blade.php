@@ -382,11 +382,11 @@
                             </div>
                             <div class="input bit-1">
                                 {!! Form::label( 'confirmed_contract', 'Acepto los términos y condiciones del contrato', [ 'class' => 'bit-1' ] ) !!}
-                                {!! Form::checkbox( 'confirmed_contract', 'si', null, [ 'required' => 'required' ] ) !!}
+                                {!! Form::checkbox( 'confirmed_contract', 1, null, [ 'required' => 'required' ] ) !!}
                             </div>
                             <div class="input bit-1">
                                 {!! Form::label( 'confirmed_policy', 'He leído el aviso de privacidad', [ 'class' => 'bit-1' ] ) !!}
-                                {!! Form::checkbox( 'confirmed_policy', 'si', null, [ 'required' => 'required' ] ) !!}
+                                {!! Form::checkbox( 'confirmed_policy', 1, null, [ 'required' => 'required' ] ) !!}
                             </div>
                             <div class="input bit-1">
                                 {!! Form::submit('Enviar') !!}
