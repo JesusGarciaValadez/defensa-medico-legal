@@ -59,19 +59,19 @@ class SolicitudController extends Controller {
 
         $mail->isSMTP(); // tell to use smtp
         $mail->CharSet = "utf-8"; // set charset to
-        $mail->SMTPDebug = 1;
+        $mail->SMTPDebug = 0;
         $mail->SMTPAuth = true;  // use smpt auth
         $mail->SMTPSecure = "ssl"; // or ssl
         $mail->Host = "smtp.gmail.com";
         $mail->Port = 465; // most likely something different for you. This is the mailtrap.io port i use for testing.
-        $mail->Username = env('EMAIL_USER', ''),
-        $mail->Password = env('EMAIL_PASSWORD', ''),
+        $mail->Username = env('EMAIL_USER', '');
+        $mail->Password = env('EMAIL_PASSWORD', '');
         $mail->setFrom( "contactodefensamedicolegal@gmail.com", "Defensa Medico Legal" );
         $mail->isHTML(true);// Set email format to HTML
         try
         {
             $mail->Subject = "Datos de tu solicitud";
-            $mail->Body    = '<h1>Recibimos tu solicitud ¡Muchas gracias!</h1><p>Recuerda, los datos de depósito son a la cuenta número: 4041280041, clabe: 021180040412800414 de HSBC, a nombre de Arroyo Abogados S.C.</p><p><b>Contáctanos</b></p><ul><li>Montecito 38, piso 8 oficina 29. Col. Napoles. World Trade Center.</li><li>03810 México D.F.</li><li>Teléfonos. 52944965, fax 55899147 ext. 11</li><li>Correo electrónico. <a href="mailto:contactodefensamedicolegal@gmail.com" title="contactodefensamedicolegal@gmail.com" target="_blank">contactodefensamedicolegal@gmail.com</a></li>';
+            $mail->Body    = '<h1>Recibimos tu solicitud ¡Muchas gracias!</h1><p>Recuerda, los datos de depósito son a la cuenta número: 4041280041, clabe: 021180040412800414 de HSBC, a nombre de Arroyo Abogados S.C.</p><p><b>Contáctanos</b></p><ul><li>Montecito 38, piso 8 oficina 29. Col. Napoles. World Trade Center.</li><li>C.P. 03810 México D.F.</li><li>Teléfonos. 52944965, fax 55899147 ext. 11</li><li>Correo electrónico. <a href="mailto:contactodefensamedicolegal@gmail.com" title="contactodefensamedicolegal@gmail.com" target="_blank">contactodefensamedicolegal@gmail.com</a></li>';
             $mail->addAddress( $email, $doctor );
             $mail->send();
         }
@@ -86,24 +86,28 @@ class SolicitudController extends Controller {
 
         try
         {
-            $mail->Subject = "Datos de tu solicitud";
-            $mail->Body    = 'Nombre del médico:' . $nombre_doctor;
-            $mail->Body   += '<br />Email:' . $email;
-            $mail->Body   += '<br />Cedula 1: ' . $cedula1;
-            $mail->Body   += '<br />Cedula 2: ' . $cedula2;
-            $mail->Body   += '<br />Cedula 3: ' . $cedula3;
-            $mail->Body   += '<br />Especialidad: ' . $especialidad;
-            $mail->Body   += '<br />Telefono celular: ' . $celular;
-            $mail->Body   += '<br />¿En que parte de la Republica te encuentras?: ' . $parteDeLaRepublica;
-            $mail->Body   += '<br />Direccion: ' . $direccion;
-            $mail->Body   += '<br />Direccion: ' . $direccion2;
-            $mail->Body   += '<br />Ciudad: ' . $ciudad;
-            $mail->Body   += '<br />Estado: ' . $estado;
-            $mail->Body   += '<br />Pais: ' . $pais;
-            $mail->Body   += '<br />Codigo Postal: ' . $codigoPostal;
-            $mail->Body   += '<br />Acepto términos y condiciones del contrato: ' . $confirmoContrato;
-            $mail->Body   += '<br />He leído el aviso de privacidad: ' . $confirmoPoliticas;
-            $mail->addAddress( 'contactodefensamedicolegal@gmail.com", "Contacto Sitio Defensa Medico Legal" );
+            $body = 'Nombre del médico:' . $doctor;
+            $body.= '<br /><b>Email</b>:' . $email;
+            $body.= '<br /><b>Cedula 1</b>: ' . $cedula1;
+            $body.= '<br /><b>Cedula 2</b>: ' . $cedula2;
+            $body.= '<br /><b>Cedula 3</b>: ' . $cedula3;
+            $body.= '<br /><b>Especialidad</b>: ' . $especialidad;
+            $body.= '<br /><b>Telefono celular</b>: ' . $celular;
+            $body.= '<br /><b>¿En que parte de la Republica te encuentras?</b>: ' . $parteDeLaRepublica;
+            $body.= '<br /><b>Direccion</b>: ' . $direccion;
+            $body.= '<br /><b>Direccion2</b>: ' . $direccion2;
+            $body.= '<br /><b>Ciudad</b>: ' . $ciudad;
+            $body.= '<br /><b>Estado</b>: ' . $estado;
+            $body.= '<br /><b>Pais</b>: ' . $pais;
+            $body.= '<br /><b>Codigo Postal</b>: ' . $codigoPostal;
+            $body.= '<br /><b>Acepto términos y condiciones del contrato</b>: ' . $confirmoContrato;
+            $body.= '<br /><b>He leído el aviso de privacidad</b>: ' . $confirmoPoliticas;
+
+            $mail->Subject = "Datos nuevos de solicitud";
+            $mail->Body    = $body;
+            $mail->clearAddresses();
+            $mail->clearAllRecipients();
+            $mail->addAddress( 'contactodefensamedicolegal@gmail.com', 'Contacto Sitio Defensa Medico Legal' );
             $mail->send();
         }
         catch ( phpmailerException $e )
