@@ -89,7 +89,7 @@
                                     'Rehabilitación y M. Deportiva' => 'Rehabilitación y M. Deportiva',
                                     'Reumatología' => 'Reumatología',
                                     'Traumatología' => 'Traumatología',
-                                    'Urología' => 'Urología', ], '' ) !!}
+                                    'Urología' => 'Urología', ], null, [ 'required' => 'required' ] ) !!}
                             </div>
                             <div class="input bit-2">
                                 {!! Form::label( 'telefono_contacto', 'Teléfono de contacto' ) !!}
@@ -135,7 +135,7 @@
                                     'Veracruz' => 'Veracruz',
                                     'Yucatán' => 'Yucatán',
                                     'Zacateca' => 'Zacatecas',
-                                ], '' ) !!}
+                                ], null, [ 'required' => 'required' ] ) !!}
                             </div>
                             <div class="input bit-1">
                                 <p class="bit-1">Dirección</p>
@@ -374,7 +374,7 @@
                                         'Zambia' => 'Zambia',
                                         'Zimbabwe' => 'Zimbabwe'
                                     ]
-                                ], '' ) !!}
+                                ], null, [ 'required' => 'required '] ) !!}
                             </div>
                             <div class="input bit-2">
                                 {!! Form::label( 'direccion_postal', 'Código Postal', [ 'class' => 'bit-1' ] ) !!}
@@ -382,11 +382,11 @@
                             </div>
                             <div class="input bit-1">
                                 {!! Form::label( 'confirmed_contract', 'Acepto los términos y condiciones del contrato', [ 'class' => 'bit-1' ] ) !!}
-                                {!! Form::checkbox( 'confirmed_contract' ) !!}
+                                {!! Form::checkbox( 'confirmed_contract', 'si', null, [ 'required' => 'required' ] ) !!}
                             </div>
                             <div class="input bit-1">
                                 {!! Form::label( 'confirmed_policy', 'He leído el aviso de privacidad', [ 'class' => 'bit-1' ] ) !!}
-                                {!! Form::checkbox( 'confirmed_policy' ) !!}
+                                {!! Form::checkbox( 'confirmed_policy', 'si', null, [ 'required' => 'required' ] ) !!}
                             </div>
                             <div class="input bit-1">
                                 {!! Form::submit('Enviar') !!}
