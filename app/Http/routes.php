@@ -41,6 +41,13 @@ Route::any( 'agradecimiento', [
                 return View::make( 'agradecimiento' );
             }
 ] );
+Route::any( 'error', [
+            'as' => 'error',
+            function ()
+            {
+                return View::make( 'error' );
+            }
+] );
 Route::get( 'solicitud', 'SolicitudController@index' );
 Route::get( 'solicitud/crear', 'SolicitudController@create' );
 Route::post( 'solicitud/store', 'SolicitudController@store' );
