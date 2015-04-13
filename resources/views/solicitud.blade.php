@@ -5,54 +5,36 @@
 @section( 'section-class', 'solicitud' )
 
 @section( 'content' )
-            <!-- Google Code for Registro Formulario Conversion Page -->
-            <script type="text/javascript">
-                /* <![CDATA[ */
-                var google_conversion_id = 948154593;
-                var google_conversion_language = "es";
-                var google_conversion_format = "3";
-                var google_conversion_color = "ffffff";
-                var google_conversion_label = "pL8SCIbgjFsQ4eGOxAM";
-                var google_remarketing_only = false;
-                /* ]]> */
-            </script>
-            <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-            </script>
-            <noscript>
-                <div style="display:inline;">
-                    <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/948154593/?label=pL8SCIbgjFsQ4eGOxAM&amp;guid=ON&amp;script=0"/>
-                </div>
-            </noscript>
             <section class="internal clearfix content bit-1">
                 <article class="clearfix bit-1">
                     <h1 class="bit-1">Solicitud</h1>
                     <p class="bit-2"><a href="/contrato" target="_self" title="Ver Contrato">Ver Contrato</a></p>
                     <p class="bit-2"><a href="/aviso-de-privacidad" target="_self" title="Ver Aviso de Privacidad">Ver Aviso de Privacidad</a></p>
-                    {!! Form::open( [ 'action' => 'SolicitudController@store' ], [ 'class' => 'bit-1 clearfix' ] ) !!}
+                    {!! Form::open( [ 'action' => 'SolicitudController@store', 'class' => 'bit-1 clearfix' ] ) !!}
                         <fieldset class="bit-1 clearfix">
                             <legend class="bit-1">Formato de solicitud</legend>
                             <p class="bit-1">Llena correctamente como se te indica</p>
-                            <div class="input bit-1">
+                            <div class="input bit-1 clearfix">
                                 {!! Form::label( 'nombre_doctor', 'Nombre del médico', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'nombre_doctor', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-1">
-                                {!! Form::label( 'email', 'Email' ) !!}
+                            <div class="input bit-1 clearfix">
+                                {!! Form::label( 'email', 'Email', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::email( 'email', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-1">
-                                {!! Form::label( 'cedula_1', 'Cédula profesional' ) !!}
+                            <div class="input bit-1 clearfix">
+                                {!! Form::label( 'cedula_1', 'Cédula profesional', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'cedula_1', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-1">
-                                {!! Form::label( 'cedula_2', 'Cedula 2' ) !!}
+                            <div class="input bit-1 clearfix">
+                                {!! Form::label( 'cedula_2', 'Cedula 2', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'cedula_2', '', [ 'class' => 'bit-1' ] ) !!}
                             </div>
-                            <div class="input bit-1">
-                                {!! Form::label( 'cedula_3', 'Cedula 3' ) !!}
+                            <div class="input bit-1 clearfix">
+                                {!! Form::label( 'cedula_3', 'Cedula 3', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'cedula_3', '', [ 'class' => 'bit-1' ] ) !!}
                             </div>
-                            <div class="input bit-1">
+                            <div class="input bit-1 clearfix">
                                 {!! Form::label( 'especialidad', 'Elige tu especialidad', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::select( 'especialidad', [
                                     '' => 'Selecciona una opción',
@@ -91,15 +73,15 @@
                                     'Traumatología' => 'Traumatología',
                                     'Urología' => 'Urología', ], null, [ 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-2">
-                                {!! Form::label( 'telefono_contacto', 'Teléfono de contacto' ) !!}
+                            <div class="input bit-2 clearfix">
+                                {!! Form::label( 'telefono_contacto', 'Teléfono de contacto', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'telefono_contacto', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-2">
-                                {!! Form::label( 'telefono_celular', 'Teléfono celular' ) !!}
+                            <div class="input bit-2 clearfix">
+                                {!! Form::label( 'telefono_celular', 'Teléfono celular', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'telefono_celular', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-1">
+                            <div class="input bit-1 clearfix">
                                 {!! Form::label( 'parte_republica', '¿En qué parte de la República te encuentras?', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::select( 'parte_republica', [
                                     '' => 'Selecciona una opción',
@@ -137,24 +119,24 @@
                                     'Zacateca' => 'Zacatecas',
                                 ], null, [ 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-1">
+                            <div class="input bit-1 clearfix">
                                 <p class="bit-1">Dirección</p>
                                 {!! Form::label( 'direccion_calle_1', 'Calle', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'direccion_calle_1', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-1">
+                            <div class="input bit-1 clearfix">
                                 {!! Form::label( 'direccion_calle_2', 'Calle 2', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'direccion_calle_2', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-2">
+                            <div class="input bit-2 clearfix">
                                 {!! Form::label( 'direccion_ciudad', 'Ciudad', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'direccion_ciudad', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-2">
+                            <div class="input bit-2 clearfix">
                                 {!! Form::label( 'direccion_estado', 'Estado', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'direccion_estado', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-2">
+                            <div class="input bit-2 clearfix">
                                 {!! Form::label( 'direccion_pais', 'País', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::select( 'direccion_pais', [
                                     '' => 'Selecciona una opción',
@@ -376,19 +358,19 @@
                                     ]
                                 ], null, [ 'required' => 'required '] ) !!}
                             </div>
-                            <div class="input bit-2">
+                            <div class="input bit-2 clearfix">
                                 {!! Form::label( 'direccion_postal', 'Código Postal', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::text( 'direccion_postal', '', [ 'class' => 'bit-1', 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-1">
+                            <div class="input bit-1 clearfix">
                                 {!! Form::label( 'confirmed_contract', 'Acepto los términos y condiciones del contrato', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::checkbox( 'confirmed_contract', 1, null, [ 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-1">
+                            <div class="input bit-1 clearfix">
                                 {!! Form::label( 'confirmed_policy', 'He leído el aviso de privacidad', [ 'class' => 'bit-1' ] ) !!}
                                 {!! Form::checkbox( 'confirmed_policy', 1, null, [ 'required' => 'required' ] ) !!}
                             </div>
-                            <div class="input bit-1">
+                            <div class="input bit-1 clearfix">
                                 {!! Form::submit('Enviar') !!}
                             </div>
                         </fieldset>
