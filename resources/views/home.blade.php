@@ -35,7 +35,7 @@
                     </section>
                 </section>
                 <section class="clearfix sign bit-90">
-                    <p class="bit-90">Si necesitas asesoría o servicios distintos a el Amparo contra la certificación médica contactanos nosotros te asesoramos</p>
+                    <p class="bit-90">Si necesitas asesoría o servicios distintos al Amparo contra la certificación médica contactanos nosotros te asesoramos</p>
                 </section>
             </section>
 @stop
