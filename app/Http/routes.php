@@ -48,16 +48,13 @@ Route::any( 'error', [
                 return View::make( 'error' );
             }
 ] );
-Route::any( 'contacto', [
-            'as' => 'contacto',
-            function ()
-            {
-                return View::make( 'contacto' );
-            }
-] );
+
 Route::get( 'solicitud', 'SolicitudController@index' );
 Route::get( 'solicitud/crear', 'SolicitudController@create' );
 Route::post( 'solicitud/store', 'SolicitudController@store' );
+
+Route::get( 'contacto', 'ContactoController@index' );
+Route::post( 'contacto/send', 'ContactoController@send' );
 
 Route::get( '/contrato', function () { return view( 'contrato' ); } );
 
