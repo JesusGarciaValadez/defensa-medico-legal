@@ -51,23 +51,24 @@ ul, ol
                     top: 0
             nav
                 align-self: center
-                ul
+                >ul
                     display: flex
                     box-sizing: border-box
                     margin: 0 auto
                     padding: 0
                     > li
-                        border-right: 1px solid $text-highlighted
-                        &:last-child
-                            border: 0 none transparent
-                    li
                         @include font-mask( normal, 12px , 1.5em, $lato-regular, $text-gray )
                         align-self: stretch
+                        border-right: 1px solid $text-highlighted
                         box-sizing: border-box
+                        display: flex
                         list-style: none outside
                         margin: 0
                         padding: 0
                         position: relative
+                        text-align: center
+                        &:last-child
+                            border: 0 none transparent
                         &:nth-child( 2 )
                             ul
                                 bottom: -95px
@@ -75,6 +76,7 @@ ul, ol
                             ul
                                 bottom: -47px
                         a
+                            align-self: center
                             color: $text-gray
                             display: block
                             padding: 5px 10px
@@ -85,17 +87,17 @@ ul, ol
                                 color: $text-highlighted
                         ul
                             background-color: #262626
+                            bottom: -100px
                             display: none
                             left: 0
                             padding: 0
                             position: absolute
-                            width: 280px
+                            width: 110px
                             li
                                 border: 0 none transparent
                                 border-bottom: 1px solid $black-color
                                 list-style: none outside
                                 padding: 10px
-                                text-align: left
                                 &:last-child
                                     border: 0 none transparent
                                 a

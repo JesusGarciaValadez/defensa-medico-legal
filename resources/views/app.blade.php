@@ -40,11 +40,11 @@
                     </a>
                 </h1>
                 <nav class="clearfix bit-70 desktop">
-                    <ul class="clearfix bit-80">
-                        <li><a href="/" target="_self" title="Inicio">Inicio</a></li>
-                        <li><a href="/quienes-somos" target="_self" title="¿Quiénes Sómos?">¿Quiénes Somos?</a></li>
-                        <li><a href="/servicios" target="_self" title="Servicios">Servicios</a></li>
-                        <li>
+                    <ul class="clearfix bit-1">
+                        <li class="bit-6"><a href="/" target="_self" title="Inicio">Inicio</a></li>
+                        <li class="bit-6"><a href="/quienes-somos" target="_self" title="¿Quiénes Sómos?">¿Quiénes Somos?</a></li>
+                        <li class="bit-6"><a href="/servicios" target="_self" title="Servicios">Servicios</a></li>
+                        <li class="bit-6">
                             <a href="#" target="_self" title="Articulos relacionados">
                                 Articulos relacionados
                             </a>
@@ -54,7 +54,8 @@
                             </ul>
                         </li>
                         <!--li><a href="/legislacion-internacional" target="_self" title="Legislación Internacional">Legislación Internacional</a></li-->
-                        <li><a href="/solicitud" target="_self" title="Solicitud">Solicitud</a></li>
+                        <li class="bit-6"><a href="/solicitud" target="_self" title="Solicitud">Solicitud</a></li>
+                        <li class="bit-6"><a href="/contacto" target="_self" title="Contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
