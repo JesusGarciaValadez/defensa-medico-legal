@@ -8,7 +8,7 @@
             <section class="internal clearfix content bit-1">
                 <article class="clearfix bit-1">
                     <h1 class="bit-1">Servicios</h1>
-                    {!! Html::image( 'img/servicios/derecho-medico-sanitario.jpg', 'Estetoscopio y martillo', [ 'class' => 'bit-80' ] ) !!}
+                    {!! Html::image( 'img/servicios/derecho-medico-sanitario-oficinas.jpg', 'Oficinas de Derecho Médico Sanitario', [ 'class' => 'bit-2' ] ) !!}
                     <p class="bit-1">Amparo en el cual se busca la declaración judicial de inconstitucionalidad de la norma general que se quiere aplicar en tu perjuicio, solicitando previamente la  suspensión con la cual se evitará que de inmediato se aplique la norma en tu perjuicio hasta en tanto se resuelva en definitiva el amparo.</p>
                     <p class="bit-1">Toma en cuenta que las resoluciones finales son dictadas por un Juez o un Tribunal.</p>
                     <p class="bit-1">Este amparo tiene un costo, pero te da la tranquilidad de que estás protegido todo este tiempo.</p>
@@ -32,6 +32,6 @@
                             </ul>
                         </li>
                     </ol>
-                    {!! Html::image( 'img/servicios/balanza-y-serpiente.png', 'Balanza y serpiente', [ 'class' => 'bit-20' ] ) !!}
+                    {!! Html::image( 'img/servicios/arboles.jpg', 'Árboles', [ 'class' => 'bit-20' ] ) !!}
             </section>
 @stop
