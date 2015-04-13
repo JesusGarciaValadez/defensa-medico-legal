@@ -22,7 +22,6 @@
                             <div class="input bit-1">
                                 {!! Form::label( 'mensaje', 'Mensaje' ) !!}
                                 {!! Form::textarea( 'mensaje', null, [ 'class' => 'bit-1 clearfix', 'required' => 'required' ] ) !!}
-                                }
                             </div>
                             <div class="input bit-1">
                                 {!! Form::submit('Enviar') !!}
