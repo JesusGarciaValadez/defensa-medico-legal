@@ -12,22 +12,22 @@
 @import "default-styles/_lemonade"
 @import "default-styles/_general"
 
-@import "custom-styles/home"
-@import "custom-styles/quienes-somos"
-//@import "custom-styles/aiddem"
-//@import "custom-styles/que-hace-la-aiddem"
-@import "custom-styles/art272"
-@import "custom-styles/art81"
-@import "custom-styles/servicios"
-@import "custom-styles/beneficios"
-//@import "custom-styles/corte"
-//@import "custom-styles/respaldo"
-@import "custom-styles/solicitud"
-@import "custom-styles/aviso"
-@import "custom-styles/contrato"
-@import "custom-styles/agradecimiento"
-@import "custom-styles/error"
-@import "custom-styles/contacto"
+@import "custom-styles/desktop/home"
+@import "custom-styles/desktop/quienes-somos"
+//@import "custom-styles/desktop/aiddem"
+//@import "custom-styles/desktop/que-hace-la-aiddem"
+@import "custom-styles/desktop/art272"
+@import "custom-styles/desktop/art81"
+@import "custom-styles/desktop/servicios"
+@import "custom-styles/desktop/beneficios"
+//@import "custom-styles/desktop/corte"
+//@import "custom-styles/desktop/respaldo"
+@import "custom-styles/desktop/solicitud"
+@import "custom-styles/desktop/aviso"
+@import "custom-styles/desktop/contrato"
+@import "custom-styles/desktop/agradecimiento"
+@import "custom-styles/desktop/error"
+@import "custom-styles/desktop/contacto"
 
 @import "default-styles/_helper_classes"
 
@@ -64,49 +64,9 @@
    iPhone 6 Plus Landscape Orientation
    ========================================================================== */
 @media only screen and (max-width: em( 736, 16 ))
-    .internal
-        padding: 0
-    .central
-        width: 100%
-    #begin
-        .wrapper
-        header
-            display: block !important
-            h1
-                img
-            nav
-                >ul
-                    display: block !important
-                    > li
-                        border: none !important
-                        display: block !important
-                        a
-                        ul
-                            border: 0 none transparent
-                            display: block !important
-                            position: static !important
-                            width: 100% !important
-                            li
-                                a
-                                    color: $white-color
-                                    text-align: center !important
-        footer
-            display: block !important
-            padding: 20px !important
-            .contact,.privacy-policy
-                clear: both
-            .contact
-                .contact-title
-                p
-                    a
-                ul
-                    li
-                        a
-            .privacy-policy
-                p
-                    a
-        a[title="Subir"]
-            display: none
+    @import "default-styles/_general_mobile"
+
+    @import "custom-styles/mobile/home"
 
 @media only screen and (max-width: em( 736, 16 )) and (orientation:landscape)
 
