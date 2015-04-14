@@ -8,7 +8,7 @@
             <section class="internal clearfix content bit-1">
                 {!! Html::image( 'img/home/libros-de-derecho.jpg', 'Con determinación buscamos la Justicia', [ 'class' => 'bit-90' ] ) !!}
                 <section class="clearfix sign bit-90">
-                    <p class="bit-90">Último día 16 de abril a las 15:00 hrs. para realizar tu amparo individual… <a href="/solicitud" title="¡Solicítalo ahora!" target="_blank">¡Solicítalo ahora!</a></p>
+                    <p class="bit-90">Último día 17 de abril a las 15:00 hrs. para realizar tu amparo individual… <a href="/solicitud" title="¡Solicítalo ahora!" target="_blank">¡Solicítalo ahora!</a></p>
                 </section>
                 <section class="clearfix advance first bit-2">
                     <p class="bit-1">
