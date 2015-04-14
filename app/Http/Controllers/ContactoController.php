@@ -4,6 +4,8 @@ use DefensaMedicoLegal\Http\Requests;
 use DefensaMedicoLegal\Http\Controllers\Controller;
 
 //use DefensaMedicoLegal\Contacto;
+use Omnipay\Omnipay;
+use Omnipay\Common\CreditCard;
 use Illuminate\Support\Facades\Request;
 
 class ContactoController extends Controller {
@@ -63,4 +65,28 @@ class ContactoController extends Controller {
         return redirect()->route('agradecimiento');
     }
 
+    public function payment()
+    {
+        $gateway    = Omnipay::create( 'PayPal_Express' );
+        $gateway->setUsername( 'jesus' );
+        $gateway->setPassword( '12345' );
+        $gateway->setTestmode( true );
+        $gateway->setSignature( 'signature' );
+        $gateway->setSolutionType( 'Sole' );
+        $gateway->setLandingPage( 'Billing' );
+        $gateway->setBrandName( 'Platzi' );
+        $gateway->setHeaderImageUrl( 'https://static.platzi.com/static/images/platzi-assets/platzi-app.15e80089d963.png' );
+        $gateway->setLogoImageUrl( 'https://static.platzi.com/static/images/platzi-assets/platzi-app.15e80089d963.png' );
+        $gateway->setBorderColor( '#0000000' );
+
+        $formInputData = array(
+            'firstName' => 'Bobby',
+            'lastName' => 'Tables',
+            'number' => '4111111111111111',
+            'expiryMonth' => '4',
+            'expiryYear' => gmdate('Y')+2,
+            'cvv' => '123'
+        );
+        $card = new CreditCard( $formInputData );
+    }
 }

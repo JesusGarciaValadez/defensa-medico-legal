@@ -60,6 +60,8 @@ Route::get( '/contrato', function () { return view( 'contrato' ); } );
 
 Route::get( '/aviso-de-privacidad', function () { return view( 'aviso-de-privacidad' ); } );
 
+Route::get( '/paypal', 'ContactoController@payment' );
+
 /*Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController'

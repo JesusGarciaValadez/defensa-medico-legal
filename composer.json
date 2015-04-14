@@ -7,7 +7,8 @@
     "require": {
         "laravel/framework": "5.0.*",
         "laravelcollective/html": "~5.0",
-        "phpmailer/phpmailer": "dev-master"
+        "phpmailer/phpmailer": "dev-master",
+        "omnipay/paypal": "2.3.*@dev",
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
