@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "988f0ce5ffdb0171233b0ef8ec68a617",
+    "hash": "03dccb79bd7d6cdfc26a3afa66c784a8",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1089,16 +1089,16 @@
         },
         {
             "name": "omnipay/paypal",
-            "version": "v2.4.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/omnipay-paypal.git",
-                "reference": "feacf47b52f599c8271625c44abc869178840ce4"
+                "reference": "cc5a2c65a4ab3e0364cca2d5ae64c58c267375e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/omnipay-paypal/zipball/feacf47b52f599c8271625c44abc869178840ce4",
-                "reference": "feacf47b52f599c8271625c44abc869178840ce4",
+                "url": "https://api.github.com/repos/thephpleague/omnipay-paypal/zipball/cc5a2c65a4ab3e0364cca2d5ae64c58c267375e3",
+                "reference": "cc5a2c65a4ab3e0364cca2d5ae64c58c267375e3",
                 "shasum": ""
             },
             "require": {
@@ -1143,7 +1143,7 @@
                 "paypal",
                 "purchase"
             ],
-            "time": "2015-03-10 23:39:59"
+            "time": "2015-04-06 15:24:43"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -3195,7 +3195,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "phpmailer/phpmailer": 20
+        "phpmailer/phpmailer": 20,
+        "omnipay/paypal": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

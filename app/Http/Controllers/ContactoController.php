@@ -80,13 +80,49 @@ class ContactoController extends Controller {
         $gateway->setBorderColor( '#0000000' );
 
         $formInputData = array(
-            'firstName' => 'Bobby',
-            'lastName' => 'Tables',
+            'firstName' => 'Example',
+            'lastName' => 'User',
             'number' => '4111111111111111',
-            'expiryMonth' => '4',
-            'expiryYear' => gmdate('Y')+2,
+            'expiryMonth' => '12',
+            'expiryYear' => '2016',
             'cvv' => '123'
         );
         $card = new CreditCard( $formInputData );
+
+        $gatewayOptions = [
+            'card' => $card,
+            'token' => 'A015GQlKQ6uCRzLHSGRliANi59BHw6egNVKEWRnxvTwvLr0',
+            'amount' => '10.00',
+            'currency' => 'MXN',
+            'description' => 'Pago de servicio',
+            'transactionId' => '0001',
+            'clientIp' => '192.168.10.10',
+            'returnUrl' => 'http://www.defensamedicolegal.com.mx/agradecimiento',
+            'cancelUrl' => 'http://www.defensamedicolegal.com.mx/contacto'
+        ];
+        $response = $gateway->authorize( $gatewayOptions )->send();
+
+        try
+        {
+            if ( $response->isSuccessful() )
+            {
+                // payment is complete
+                return redirect()->route( 'agradecimiento' );
+            }
+            elseif ( $response->isRedirect() )
+            {
+                $response->redirect(); // this will automatically forward the customer
+            }
+            else
+            {
+                // not successful
+                //return redirect()->route( 'contacto' );
+                exit($response->getMessage());
+            }
+        }
+        catch ( \Exception $e )
+        {
+            exit( $e->getMessage() );
+        }
     }
 }
