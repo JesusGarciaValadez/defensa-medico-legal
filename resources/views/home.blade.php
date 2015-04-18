@@ -38,4 +38,18 @@
                     <p class="bit-90">Si necesitas asesoría o servicios distintos al Amparo contra la certificación médica contactanos nosotros te asesoramos</p>
                 </section>
             </section>
+            <input type="checkbox" name="lightbox-trigger" id="lightbox-trigger">
+            <section class="lightbox-background bit-1 clearfix">
+                <article class="lightbox bit-70">
+                    <figure class="bit-10">{!! Html::image( 'img/home/logo-face.jpg', 'Consejo Mexicano de la Defensa Médico Legal' ) !!}</figure>
+                    <label for="lightbox-trigger">X</label>
+                    <h1 class="bit-1 centered">No dejes pasar más tiempo, <br />¡El <strong>plazo</strong> está a punto de <strong>terminar</strong>!</h1>
+                    <p class="bit-1">Por eso, estaremos apoyándote este fin de semana <br /><strong>Llámanos</strong> o <strong>contáctanos</strong> en:</p>
+                    <div class="info clearfix">
+                        <p class="bit-1">Cel. <span>55 91995792</span></p>
+                        <p class="bit-1"><a href="mailto:jl_yescasg@hotmail.com" target="" title="">jl_yescasg@hotmail.com</a></p>
+                        <p class="bit-1">atención del Lic. José Luis Yescas</p>
+                    </div>
+                </article>
+            </section>
 @stop
