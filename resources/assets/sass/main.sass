@@ -38,22 +38,16 @@
    ========================================================================== */
 
 /* ==========================================================================
-   iPhone 3GS/4/4S Portrait Orientation
+   iPhone 6 Plus Landscape Orientation
    ========================================================================== */
-@media only screen and (max-width: em( 480 ))
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: em( 736, 16 ))
+    @import "default-styles/_general_mobile"
 
-/* ==========================================================================
-   iPhone 5/5S Portrait Orientation
-   ========================================================================== */
-@media only screen and (max-width: em( 568, 16 ))
-    /* Style adjustments for viewports that meet the condition */
+    @import "custom-styles/mobile/home-6-portrait"
+    @import "custom-styles/mobile/solicitud"
 
-/* ==========================================================================
-   iPhone 5/5S Landscape Orientation
-   ========================================================================== */
-@media only screen and (max-width: em( 568, 16 )) and (orientation:landscape)
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: em( 736, 16 )) and (orientation:landscape)
+    @import "custom-styles/mobile/home-6-landscape"
 
 /* ==========================================================================
    iPhone 6 Orientation
@@ -61,15 +55,28 @@
 @media only screen and (max-width: em( 667, 16 ))
 
 /* ==========================================================================
-   iPhone 6 Plus Landscape Orientation
+   iPhone 5/5S Portrait Orientation
    ========================================================================== */
-@media only screen and (max-width: em( 736, 16 ))
-    @import "default-styles/_general_mobile"
+@media only screen and (max-width: em( 568, 16 ))
+    @import "custom-styles/mobile/home-5-portrait"
 
-    @import "custom-styles/mobile/home"
-    @import "custom-styles/mobile/solicitud"
+/* ==========================================================================
+   iPhone 5/5S Landscape Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 568, 16 )) and (orientation:landscape)
+    @import "custom-styles/mobile/home-5-landscape"
 
-@media only screen and (max-width: em( 736, 16 )) and (orientation:landscape)
+/* ==========================================================================
+   iPhone 3GS/4/4S Portrait Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 480 ))
+    @import "custom-styles/mobile/home-4-portrait"
+
+/* ==========================================================================
+   iPhone 3GS/4/4S Portrait Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 480 )) and (orientation:landscape)
+    @import "custom-styles/mobile/home-4-landscape"
 
 /* ==========================================================================
    iPad
