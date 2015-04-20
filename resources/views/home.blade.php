@@ -43,12 +43,9 @@
                 <article class="lightbox bit-70">
                     <figure class="bit-10">{!! Html::image( 'img/home/logo-face.jpg', 'Consejo Mexicano de la Defensa Médico Legal' ) !!}</figure>
                     <label for="lightbox-trigger">X</label>
-                    <h1 class="bit-1 centered">No dejes pasar más tiempo, <br />¡El <strong>plazo</strong> está a punto de <strong>terminar</strong>!</h1>
-                    <p class="bit-1">Por eso, estaremos apoyándote este fin de semana <br /><strong>Llámanos</strong> o <strong>contáctanos</strong> en:</p>
                     <div class="info clearfix">
-                        <p class="bit-1">Cel. <span>55 91995792</span></p>
-                        <p class="bit-1"><a href="mailto:jl_yescasg@hotmail.com" target="" title="">jl_yescasg@hotmail.com</a></p>
-                        <p class="bit-1">atención del Lic. José Luis Yescas</p>
+                        <p class="bit-1">Información importante</p>
+                        <p class="bit-1"><a href="http://www.jornada.unam.mx/2011/10/23/sociedad/037n1soc" target="_blank" title="UAM: Inconstitucional, la reforma que obliga a los médicos a certificarse.">http://www.jornada.unam.mx/2011/10/23/sociedad/037n1soc</a></p>
                     </div>
                 </article>
             </section>
